@@ -7,6 +7,8 @@ Description: "Represents a clinical condition recorded in Kenya EMS and facility
 * meta.profile 1..* MS
 * meta.profile ^short = "Enforces conformance to the Kenya condition profile"
 
+* insert IdentifierRequiredRule(identifier, 1..*)
+
 * clinicalStatus 1..1 MS
 * clinicalStatus ^short = "Clinical status of the condition"
 

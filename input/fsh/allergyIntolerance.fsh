@@ -7,20 +7,8 @@ Description: "Represents patient allergies and intolerances recorded in Kenya EM
 * meta.profile 1..* MS
 * meta.profile ^short = "Enforces conformance to the Kenya allergy profile"
 
-* identifier 0..* MS
-* identifier ^short = "Identifiers associated with the allergy"
+* insert IdentifierRequiredRule(identifier, 1..*)
 
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-
-* identifier contains
-    shrId 0..1 MS
-
-* identifier[shrId].system 1..1
-* identifier[shrId].system = "http://example.org/identifier/shr-id"
-* identifier[shrId].value 1..1
-* identifier[shrId] ^short = "Shared Health Record ID"
 * clinicalStatus 0..1 MS
 * clinicalStatus ^short = "Clinical status of the allergy"
 

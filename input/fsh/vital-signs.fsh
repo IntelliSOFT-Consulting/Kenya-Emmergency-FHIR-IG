@@ -7,6 +7,8 @@ Description: "Represents vital signs observations captured in the Kenya EMS and 
 * meta.profile 1..* MS
 * meta.profile ^short = "Enforces conformance to the Kenya vital signs profile"
 
+* insert IdentifierRequiredRule(identifier, 1..*)
+
 * status 1..1 MS
 * status ^short = "Observation status"
 

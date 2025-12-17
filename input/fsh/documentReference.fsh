@@ -9,32 +9,7 @@ Description: "Kenya DocumentReference profile for clinical and administrative do
 * meta.profile 1..* MS
 * meta.profile ^short = "Enforces conformance to the Kenya DocumentReference profile"
 
-* identifier 1..* MS
-* identifier ^short = "Document identifiers such as document ID, external reference ID, SHR ID"
-
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-
-* identifier contains
-    documentId 1..1 MS and
-    externalDocumentId 0..1 MS and
-    shrId 0..1 MS
-
-* identifier[documentId].system 1..1
-* identifier[documentId].system = "http://example.org/identifier/document-id"
-* identifier[documentId].value 1..1
-* identifier[documentId] ^short = "Primary document identifier"
-
-* identifier[externalDocumentId].system 1..1
-* identifier[externalDocumentId].system = "http://example.org/identifier/external-document-id"
-* identifier[externalDocumentId].value 1..1
-* identifier[externalDocumentId] ^short = "External system document identifier"
-
-* identifier[shrId].system 1..1
-* identifier[shrId].system = "http://example.org/identifier/shr-id"
-* identifier[shrId].value 1..1
-* identifier[shrId] ^short = "Shared Health Record ID"
+* insert IdentifierRequiredRule(identifier, 1..*)
 
 * status 1..1 MS
 * status ^short = "Document status"
