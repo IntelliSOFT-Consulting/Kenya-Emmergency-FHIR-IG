@@ -7,20 +7,7 @@ Description: "Represents medications administered to a patient in Kenya EMS and 
 * meta.profile 1..* MS
 * meta.profile ^short = "Enforces conformance to the Kenya medication administration profile"
 
-* identifier 0..* MS
-* identifier ^short = "Identifiers associated with the medication administration"
-
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-
-* identifier contains
-    shrId 0..1 MS
-
-* identifier[shrId].system 1..1
-* identifier[shrId].system = "http://example.org/identifier/shr-id"
-* identifier[shrId].value 1..1
-* identifier[shrId] ^short = "Shared Health Record ID"
+* insert IdentifierRequiredRule(identifier, 1..*)
 
 * status 1..1 MS
 * status ^short = "Medication administration status"
