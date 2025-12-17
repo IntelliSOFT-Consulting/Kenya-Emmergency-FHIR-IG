@@ -12,7 +12,6 @@ Description: "Represents an ambulance case episode in the Kenya Emergency Medica
 
 * insert IdentifierRequiredRule(identifier, 1..*)
 
-
 * type 1..* MS
 * type ^short = "Case classification, category, or type"
 
