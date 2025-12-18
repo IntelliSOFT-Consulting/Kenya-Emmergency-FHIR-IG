@@ -15,6 +15,7 @@ Description: "Kenya DiagnosticReport profile for laboratory and investigation re
 * status ^short = "Report status"
 
 * code 1..1 MS
+* code from InvestigationsVS (required)
 * code ^short = "Investigation code (OCL/LOINC)"
 
 * subject 1..1 MS

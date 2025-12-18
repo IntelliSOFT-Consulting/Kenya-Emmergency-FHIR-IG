@@ -142,3 +142,15 @@ Description: "ValueSet for types of clinical assessments."
 * ^publisher = "Ministry of Health Kenya"
 
 * include codes from system AssessmentTypesCS
+
+ValueSet: InvestigationsVS
+Id: investigations-vs
+Title: "Investigation Codes ValueSet"
+Description: "ValueSet containing investigation codes for procedures."
+* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-PPB/ValueSet/Investigations/"
+* ^version = "1.0"
+* ^status = #active
+* ^publisher = "Ministry of Health Kenya"
+
+// Include all codes from the CodeSystem
+* include codes from system InvestigationsCS

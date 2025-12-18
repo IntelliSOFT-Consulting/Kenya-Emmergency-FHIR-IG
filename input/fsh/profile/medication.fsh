@@ -41,8 +41,10 @@ Description: "Represents medications administered to a patient in Kenya EMS and 
 * dosage ^short = "Dosage details"
 
 * dosage.route 0..1 MS
+* dosage.route from MedicationAdministrationRouteVS (required)
 * dosage.route ^short = "Route of administration"
 
 * dosage.dose 0..1 MS
+* dosage.dose from DoseUnitsVS (required)
 * dosage.dose ^short = "Dose quantity with unit"
 
