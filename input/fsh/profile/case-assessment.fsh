@@ -16,7 +16,7 @@ Description: "Kenya Case Assessment profile representing structured clinical ass
 
 * code 1..1 MS
 * code ^short = "Assessment type"
-* code from https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/sources/HIE-REF/concepts/ASSESSMENT_TYPES/ (required)
+* code from AssessmentTypesVS (required)
 
 * subject 1..1 MS
 * subject only Reference(Patient)
