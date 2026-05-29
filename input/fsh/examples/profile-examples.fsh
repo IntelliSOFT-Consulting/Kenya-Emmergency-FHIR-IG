@@ -6,6 +6,7 @@ Description: "Example patient for ambulance dispatch, scene assessment, and faci
 * identifier[0].value = "33445566"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient has a penicillin allergy.</div>"
+* meta.profile[+] = "https://fhir.dha.go.ke/eclaims/StructureDefinition/ke-eclaims-patient"
 * name[0].family = "Atieno"
 * name[0].given[0] = "Amina"
 * telecom[0].system = #phone
@@ -21,6 +22,7 @@ Title: "Practitioner - Ambulance Clinician"
 Description: "Example clinician involved in ambulance response and emergency handover."
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Practitioner Sarah Njoroge</div>"
+* meta.profile[+] = "https://fhir.dha.go.ke/eclaims/StructureDefinition/ke-eclaims-practitioner"
 
 
 * name[0].family = "Njoroge"
@@ -35,6 +37,7 @@ Title: "Organization - Nairobi County EMS"
 Description: "Example emergency services provider organization."
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient has a penicillin allergy.</div>"
+* meta.profile[+] = "https://fhir.dha.go.ke/eclaims/StructureDefinition/ke-eclaims-organization"
 
 
 * name = "Nairobi County Emergency Medical Services"
@@ -60,6 +63,7 @@ Title: "EpisodeOfCare - Road Traffic Trauma Case"
 Description: "Example ambulance episode of care for an emergency trauma response."
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient has a penicillin allergy.</div>"
+* meta.profile[+] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-episode-of-care"
 
 
 * identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
@@ -77,6 +81,7 @@ Title: "Encounter - Ambulance Transport"
 Description: "Example ambulance encounter covering scene response and transport."
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient has a penicillin allergy.</div>"
+* meta.profile[+] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-encounter"
 
 
 * identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
@@ -98,6 +103,7 @@ Title: "Condition - Chest Trauma"
 Description: "Example emergency condition recorded during ambulance assessment."
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient has a penicillin allergy.</div>"
+* meta.profile[+] = "https://fhir.dha.go.ke/eclaims/StructureDefinition/ke-eclaims-condition"
 
 
 * identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
@@ -110,26 +116,27 @@ Description: "Example emergency condition recorded during ambulance assessment."
 * encounter = Reference(KenyaAmbulanceEncounterExample)
 * recordedDate = "2026-05-29T08:25:00+03:00"
 
+
 Instance: KenyaAllergyExample
-InstanceOf: KenyaAllergyIntolerance
+InstanceOf: AllergyIntolerance
 Usage: #example
-Title: "AllergyIntolerance - Penicillin Allergy"
-Description: "Example allergy record available during emergency treatment."
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient has a penicillin allergy.</div>"
-
-
-* identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
-* identifier[0].value = "EMS-ALG-0001"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
-* verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed "Confirmed"
-* code.text = "Penicillin allergy"
-* patient = Reference(KenyaEmergencyPatientExample)
-* encounter = Reference(KenyaAmbulanceEncounterExample)
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-allergy-intolerance"
+* identifier.system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
+* identifier.value = "EMS-ALG-0001"
+* type = #allergy
+* category = #food
+* criticality = #high
+* clinicalStatus = $allergyintolerance-clinical#active "Active"
+* verificationStatus = $allergyintolerance-verification#confirmed "Confirmed"
+* code = $active-components-cs#AC10008 "Domiphen"
+* patient = Reference(Patient/KenyaEmergencyPatientExample)
+* encounter = Reference(Encounter/KenyaAmbulanceEncounterExample)
 * recordedDate = "2026-05-29T08:26:00+03:00"
-* recorder = Reference(EmergencyPractitionerExample)
-* asserter = Reference(KenyaEmergencyPatientExample)
-* reaction[0].manifestation[0].text = "Generalized rash"
+* recorder = Reference(Practitioner/EmergencyPractitionerExample)
+* asserter = Reference(Patient/KenyaEmergencyPatientExample)
+* reaction.severity = #severe
+* reaction.manifestation = $manifestation-cs#ANAPHYLAXIS "Anaphylaxis"
+* reaction.substance = $active-components-cs#AC10008 "Domiphen"
 
 Instance: KenyaVitalSignsExample
 InstanceOf: KenyaVitalSignsObservation
@@ -219,6 +226,7 @@ Title: "MedicationAdministration - IV Fluids"
 Description: "Example medication administration recorded during transport."
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient has a penicillin allergy.</div>"
+* meta.profile[+] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-medication"
 
 
 * identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
@@ -243,6 +251,7 @@ Title: "DiagnosticReport - Trauma Imaging Request Result"
 Description: "Example diagnostic report used during emergency handover."
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient has a penicillin allergy.</div>"
+* meta.profile[+] = "https://fhir.dha.go.ke/eclaims/StructureDefinition/ke-eclaims-diagnosticreport"
 
 
 * identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
@@ -328,6 +337,7 @@ Description: "Invalid practitioner example demonstrating a missing required name
 
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Invalid practitioner example.</div>"
+* meta.profile[+] = "https://fhir.dha.go.ke/eclaims/StructureDefinition/ke-eclaims-practitioner"
 
 * telecom[0].system = #phone
 * telecom[0].value = "+254700100200"
@@ -341,6 +351,7 @@ Description: "Invalid organization example demonstrating a missing required name
 
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Invalid organization example.</div>"
+* meta.profile[+] = "https://fhir.dha.go.ke/eclaims/StructureDefinition/ke-eclaims-organization"
 * active = true
 
 Instance: InvalidLocationExample
@@ -363,6 +374,7 @@ Description: "Invalid episode of care example demonstrating a missing patient re
 
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Invalid episode of care example.</div>"
+* meta.profile[+] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-episode-of-care"
 * identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
 * identifier[0].value = "INVALID-EMS-EOC-0001"
 * type[0].text = "Road traffic trauma response"
@@ -378,6 +390,7 @@ Description: "Invalid encounter example demonstrating an end date occurring befo
 
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Invalid encounter example.</div>"
+* meta.profile[+] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-encounter"
 * identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
 * identifier[0].value = "INVALID-EMS-EOC-0001"
 * status = #finished
@@ -397,6 +410,7 @@ Description: "Invalid condition example demonstrating a missing subject referenc
 
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Invalid condition example.</div>"
+* meta.profile[+] = "https://fhir.dha.go.ke/eclaims/StructureDefinition/ke-eclaims-condition"
 * identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
 * identifier[0].value = "INVALID-EMS-EOC-0001"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active" 
@@ -414,6 +428,7 @@ Description: "Invalid allergy example demonstrating a missing patient reference.
 
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Invalid allergy example.</div>"
+* meta.profile[+] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-allergy-intolerance"
 * identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
 * identifier[0].value = "INVALID-EMS-EOC-0001"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
@@ -488,6 +503,7 @@ Description: "Invalid medication administration example demonstrating a missing 
 
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Invalid medication administration example.</div>"
+* meta.profile[+] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-medication"
 * identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
 * identifier[0].value = "INVALID-EMS-EOC-0001"
 * status = #completed
@@ -503,6 +519,7 @@ Description: "Invalid diagnostic report example demonstrating a missing code."
 
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Invalid diagnostic report example.</div>"
+* meta.profile[+] = "https://fhir.dha.go.ke/eclaims/StructureDefinition/ke-eclaims-diagnosticreport"
 * identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
 * identifier[0].value = "INVALID-EMS-DR-0001"
 * status = #final 
