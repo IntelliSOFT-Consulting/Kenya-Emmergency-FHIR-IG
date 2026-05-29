@@ -1,14 +1,16 @@
-// This is a simple example of a FSH file.
-// This file can be renamed, and additional FSH files can be added.
-// SUSHI will look for definitions in any file using the .fsh ending.
-Profile: MyPatient
+Profile: KenyaEmergencyPatient
 Parent: Patient
-Description: "An example profile of the Patient resource."
-* name 1..* MS
+Id: kenya-emergency-patient
+Title: "Patient - Kenya Emergency"
+Description: "Represents a patient receiving pre-hospital or emergency services in Kenya."
 
-Instance: PatientExample
-InstanceOf: MyPatient
-Description: "An example of a patient with a license to krill."
-* name
-  * given[0] = "James"
-  * family = "Pond"
+* identifier 1..* MS
+* identifier.system 1..1 MS
+* identifier.value 1..1 MS
+* name 1..* MS
+* telecom 0..* MS
+* gender 0..1 MS
+* birthDate 0..1 MS
+* address 0..* MS
+
+

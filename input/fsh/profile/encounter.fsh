@@ -10,7 +10,7 @@ Description: "Encounter profile for ambulance services in Kenya."
 * identifier 1..* MS
 
 * status 1..1 MS
-* status from AmbulanceCaseStatusVS (required)
+* status ^short = "Encounter status using the core FHIR encounter lifecycle"
 
 * class 1..1 MS
 

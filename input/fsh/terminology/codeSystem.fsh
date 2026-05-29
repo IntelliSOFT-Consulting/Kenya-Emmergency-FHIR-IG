@@ -2,7 +2,7 @@ CodeSystem: CasePriorityCS
 Id: case-priority
 Title: "Case Priority"
 Description: "Defines priority levels for cases."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CASE-PRIORITY"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -18,7 +18,7 @@ CodeSystem: AmbulanceCaseStatusCS
 Id: ambulance-case-status
 Title: "Ambulance Case Status"
 Description: "Defines the lifecycle statuses of an ambulance case."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-STATUS"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -40,7 +40,7 @@ CodeSystem: AmbulanceCaseRejectionReasonCS
 Id: ambulance-case-rejection-reason
 Title: "Ambulance Case Rejection Reason"
 Description: "Defines reasons for rejecting an ambulance case."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-REJECTION-REASON"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -60,7 +60,7 @@ CodeSystem: PulseStateClassificationCS
 Id: pulse-state-classification
 Title: "Pulse State Classification"
 Description: "Clinical classification of pulse rate states."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/PULSE-STATE-CLASSIFICATION"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -78,7 +78,7 @@ CodeSystem: BreathingStateClassificationCS
 Id: breathing-state-classification
 Title: "Breathing State Classification"
 Description: "Clinical classification of breathing rate states."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/BREATHING-STATE-CLASSIFICATION"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -94,7 +94,7 @@ CodeSystem: ConditionStatusesCS
 Id: condition-statuses
 Title: "Condition Statuses"
 Description: "Clinical severity statuses for a patient condition."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CONDITION-STATUSES"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -107,7 +107,7 @@ CodeSystem: AllergyReporterCS
 Id: allergy-reporter
 Title: "Allergy Reporter"
 Description: "Identifies the source reporting an allergy."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ALLERGY-REPORTER"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -120,7 +120,7 @@ CodeSystem: CodingSystemSourceCS
 Id: coding-system-source
 Title: "Coding System Source"
 Description: "Identifies the terminology source from which a clinical code originates."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CODING-SYSTEM-SOURCE"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -134,7 +134,7 @@ CodeSystem: MedicationAdministrationRouteCS
 Id: medication-administration-route
 Title: "Medication Administration Route"
 Description: "Specifies the route by which a medication is administered."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/MEDICATION-ADMINISTRATION-ROUTE"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -148,7 +148,7 @@ CodeSystem: DoseUnitsCS
 Id: dose-units
 Title: "Dose Units"
 Description: "Units used to specify medication doses."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/DOSE-UNITS"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -161,7 +161,7 @@ CodeSystem: QuestionnaireCategoryCS
 Id: questionnaire-category
 Title: "Questionnaire Category"
 Description: "Categories used to classify questionnaires or assessments."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/QUESTIONNAIRE-CATEGORY"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -176,7 +176,7 @@ CodeSystem: EntryTypesCS
 Id: entry-types
 Title: "Entry Types"
 Description: "Defines the type of clinical entry recorded in the health record."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ENTRY-TYPES"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -193,7 +193,7 @@ CodeSystem: AssessmentTypesCS
 Id: assessment-types
 Title: "Assessment Types"
 Description: "Specifies types of clinical assessments for patient evaluation."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ASSESSMENT-TYPES"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"

@@ -2,7 +2,7 @@ CodeSystem: InvestigationsCS
 Id: investigations-cs
 Title: "Investigation Codes"
 Description: "Defines Investigation Codes for Procedures."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-PPB/ValueSet/Investigations/"
+* insert ShareableCodeSystemMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"

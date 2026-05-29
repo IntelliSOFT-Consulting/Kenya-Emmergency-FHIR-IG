@@ -29,3 +29,18 @@ RuleSet: IdentifierRequiredRule(path, card)
 RuleSet: ReferenceRule(path, target, card)
 * {path} {card} MS
 * {path} only Reference({target})
+
+// -----------------------------------------------------------------------------
+// RuleSet: ShareableCodeSystemMetadata
+// Description: Adds common metadata expected on published CodeSystems.
+// -----------------------------------------------------------------------------
+RuleSet: ShareableCodeSystemMetadata
+* ^experimental = false
+* ^caseSensitive = true
+
+// -----------------------------------------------------------------------------
+// RuleSet: ShareableValueSetMetadata
+// Description: Adds common metadata expected on published ValueSets.
+// -----------------------------------------------------------------------------
+RuleSet: ShareableValueSetMetadata
+* ^experimental = false

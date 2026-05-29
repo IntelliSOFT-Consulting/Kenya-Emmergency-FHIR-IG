@@ -2,7 +2,7 @@ ValueSet: CasePriorityVS
 Id: case-priority-vs
 Title: "Case Priority"
 Description: "ValueSet for prioritizing cases."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CASE-PRIORITY"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -14,7 +14,7 @@ ValueSet: AmbulanceCaseStatusVS
 Id: ambulance-case-status-vs
 Title: "Ambulance Case Status"
 Description: "ValueSet for ambulance case status."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/AMBULANCE-CASE-STATUS"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -25,7 +25,7 @@ ValueSet: AmbulanceCaseRejectionReasonVS
 Id: ambulance-case-rejection-reason-vs
 Title: "Ambulance Case Rejection Reason"
 Description: "ValueSet for ambulance case rejection reasons."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/AMBULANCE-CASE-REJECTION-REASON"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -36,7 +36,7 @@ ValueSet: PulseStateClassificationVS
 Id: pulse-state-classification-vs
 Title: "Pulse State Classification"
 Description: "ValueSet for pulse state classification."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/PULSE-STATE-CLASSIFICATION"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -47,7 +47,7 @@ ValueSet: BreathingStateClassificationVS
 Id: breathing-state-classification-vs
 Title: "Breathing State Classification"
 Description: "ValueSet for breathing state classification."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/BREATHING-STATE-CLASSIFICATION"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -58,7 +58,7 @@ ValueSet: ConditionStatusesVS
 Id: condition-statuses-vs
 Title: "Condition Statuses"
 Description: "ValueSet for condition severity statuses."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CONDITION-STATUSES"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -69,7 +69,7 @@ ValueSet: AllergyReporterVS
 Id: allergy-reporter-vs
 Title: "Allergy Reporter"
 Description: "ValueSet identifying who reported an allergy."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/ALLERGY-REPORTER"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -80,7 +80,7 @@ ValueSet: CodingSystemSourceVS
 Id: coding-system-source-vs
 Title: "Coding System Source"
 Description: "ValueSet identifying the source coding system."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CODING-SYSTEM-SOURCE"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -91,7 +91,7 @@ ValueSet: MedicationAdministrationRouteVS
 Id: medication-administration-route-vs
 Title: "Medication Administration Route"
 Description: "ValueSet for routes of medication administration."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/MEDICATION-ADMINISTRATION-ROUTE"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -103,7 +103,7 @@ ValueSet: DoseUnitsVS
 Id: dose-units-vs
 Title: "Dose Units"
 Description: "ValueSet for units used in medication dosing."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/DOSE-UNITS"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -114,7 +114,7 @@ ValueSet: QuestionnaireCategoryVS
 Id: questionnaire-category-vs
 Title: "Questionnaire Category"
 Description: "ValueSet for classifying types of questionnaires."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/QUESTIONNAIRE-CATEGORY"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -125,7 +125,7 @@ ValueSet: EntryTypesVS
 Id: entry-types-vs
 Title: "Entry Types"
 Description: "ValueSet for types of clinical entries in the health record."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/ENTRY-TYPES"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -136,7 +136,7 @@ ValueSet: AssessmentTypesVS
 Id: assessment-types-vs
 Title: "Assessment Types"
 Description: "ValueSet for types of clinical assessments."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/ASSESSMENT-TYPES"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -147,7 +147,7 @@ ValueSet: InvestigationsVS
 Id: investigations-vs
 Title: "Investigation Codes ValueSet"
 Description: "ValueSet containing investigation codes for procedures."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-PPB/ValueSet/Investigations/"
+* insert ShareableValueSetMetadata
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"

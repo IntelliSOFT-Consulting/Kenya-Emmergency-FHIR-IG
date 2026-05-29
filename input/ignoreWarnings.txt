@@ -3,3 +3,14 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+# Encounter.class in R4 is bound to HL7 v3 ActCode. The validator reports the packaged code system as draft
+# even though this is the standard FHIR R4 binding and the example is using the correct code.
+INFORMATION: Encounter/KenyaAmbulanceEncounterExample: Encounter.class: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v3-ActCode|2018-08-12
+
+# The publisher-generated snapshot for Encounter carries a deprecated maxValueSet extension inherited
+# from the HL7 extensions package. This is not authored in this IG and cannot be corrected from local FSH.
+INFORMATION: StructureDefinition/ke-ambulance-encounter: StructureDefinition.snapshot.element[12].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+
+# The Questionnaire example is intentionally local to this IG and does not require an OID.
+INFORMATION: Resource: The resource Questionnaire/kenya-emergency-gcs-questionnaire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
