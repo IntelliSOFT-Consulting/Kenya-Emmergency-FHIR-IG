@@ -248,7 +248,8 @@ Description: "Example diagnostic report used during emergency handover."
 * identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
 * identifier[0].value = "EMS-DR-0001"
 * status = #final
-* code = InvestigationsCS#INV-00001847 "X-Ray Unspecified"
+* code = https://loinc.org#100018-1 "Hospital care Note"
+// * code = InvestigationsCS#INV-00001847 "X-Ray Unspecified" 
 * subject = Reference(KenyaEmergencyPatientExample)
 * encounter = Reference(KenyaAmbulanceEncounterExample)
 * effectiveDateTime = "2026-05-29T09:10:00+03:00"
@@ -504,9 +505,9 @@ Description: "Invalid diagnostic report example demonstrating a missing code."
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Invalid diagnostic report example.</div>"
 * identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
 * identifier[0].value = "INVALID-EMS-DR-0001"
-* status = #final
-* code = InvestigationsCS#INV-00001847 "X-Ray Unspecified"
+* status = #final 
 * subject = Reference(KenyaEmergencyPatientExample)
+* code = https://loinc.org#100018-1 "Hospital care Note"
 
 Instance: InvalidDocumentReferenceExample
 InstanceOf: KenyaDocumentReference

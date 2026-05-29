@@ -3,7 +3,7 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.example
+id: fhir.kenyaEmergencyIG
 canonical: http://example.org
 name: Kenya-Emmergency-FHIR-IG
 title: Kenya Emmergency FHIR Implementation Guide (IG)
