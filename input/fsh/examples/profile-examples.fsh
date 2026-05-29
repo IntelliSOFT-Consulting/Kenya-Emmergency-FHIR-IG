@@ -233,7 +233,7 @@ Description: "Example medication administration recorded during transport."
 * dosage.route = MedicationAdministrationRouteCS#INTRAVENOUS-IV "Intravenous (IV)"
 * dosage.dose.value = 500
 * dosage.dose.unit = "Milliliter (mL)"
-* dosage.dose.system = "https://fhir.dha.go.ke/emergency/CodeSystem/dose-units"
+* dosage.dose.system = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/DOSE-UNITS"
 * dosage.dose.code = #MILLILITER-ML
 
 Instance: KenyaDiagnosticReportExample
