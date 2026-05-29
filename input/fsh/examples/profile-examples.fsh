@@ -118,7 +118,10 @@ Description: "Example emergency condition recorded during ambulance assessment."
 
 
 Instance: KenyaAllergyExample
-InstanceOf: AllergyIntolerance
+InstanceOf: KenyaAllergyIntolerance
+Title: "AllergyIntolerance - Domiphen Allergy VALID"
+Description: "Example AllergyIntolerance record documenting a confirmed severe allergy to Domiphen, resulting in anaphylaxis, recorded during an emergency care encounter."
+
 Usage: #example
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-allergy-intolerance"
 * identifier.system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
@@ -129,6 +132,31 @@ Usage: #example
 * clinicalStatus = $allergyintolerance-clinical#active "Active"
 * verificationStatus = $allergyintolerance-verification#confirmed "Confirmed"
 * code = $active-components-cs#AC10008 "Domiphen"
+* patient = Reference(Patient/KenyaEmergencyPatientExample)
+* encounter = Reference(Encounter/KenyaAmbulanceEncounterExample)
+* recordedDate = "2026-05-29T08:26:00+03:00"
+* recorder = Reference(Practitioner/EmergencyPractitionerExample)
+* asserter = Reference(Patient/KenyaEmergencyPatientExample)
+* reaction.severity = #severe
+* reaction.manifestation = $manifestation-cs#ANAPHYLAXIS "Anaphylaxis"
+* reaction.substance = $active-components-cs#AC10008 "Domiphen"
+
+
+Instance: KenyaAllergyExampleInvalid
+InstanceOf: KenyaAllergyIntolerance
+Title: "AllergyIntolerance - Domiphen Allergy INVALID"
+Description: "Example AllergyIntolerance record documenting a confirmed severe allergy to Domiphen, resulting in anaphylaxis, recorded during an emergency care encounter."
+
+Usage: #example
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-allergy-intolerance"
+* identifier.system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
+* identifier.value = "EMS-ALG-0001"
+* type = #allergy
+* category = #food
+* criticality = #high
+* clinicalStatus = $allergyintolerance-clinical#active "Active"
+* verificationStatus = $allergyintolerance-verification#confirmed "Confirmed"
+* code = $active-components-cs#AC10008 "Domiphen Invalid"
 * patient = Reference(Patient/KenyaEmergencyPatientExample)
 * encounter = Reference(Encounter/KenyaAmbulanceEncounterExample)
 * recordedDate = "2026-05-29T08:26:00+03:00"
@@ -420,20 +448,7 @@ Description: "Invalid condition example demonstrating a missing subject referenc
 * verificationStatus
 * subject = Reference(KenyaEmergencyPatientExample)
 
-Instance: InvalidAllergyExample
-InstanceOf: KenyaAllergyIntolerance
-Usage: #example
-Title: "Invalid AllergyIntolerance Example"
-Description: "Invalid allergy example demonstrating a missing patient reference."
-
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Invalid allergy example.</div>"
-* meta.profile[+] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-allergy-intolerance"
-* identifier[0].system = "https://fhir.dha.go.ke/emergency/NamingSystem/emergency-record-identifier"
-* identifier[0].value = "INVALID-EMS-EOC-0001"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
-* code.text = "Penicillin allergy"
-* patient = Reference(KenyaEmergencyPatientExample)
+ 
 
 Instance: InvalidVitalSignsExample
 InstanceOf: KenyaVitalSignsObservation
