@@ -16,6 +16,7 @@ Description: "Represents vital signs observations captured in the Kenya EMS and 
 * category ^short = "Observation category"
 
 * code 1..1 MS
+* code from VitalSignsVS
 * code ^short = "Type of vital sign measured"
 
 * subject 1..1 MS

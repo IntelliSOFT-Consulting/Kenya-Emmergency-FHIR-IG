@@ -1,157 +1,143 @@
 ValueSet: CasePriorityVS
 Id: case-priority-vs
 Title: "Case Priority"
-Description: "ValueSet for prioritizing cases."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CASE-PRIORITY"
+Description: "ValueSet for prioritizing cases." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
 
-* include codes from system CasePriorityCS
+* include codes from system $case-priority-cs 
 
 
 ValueSet: AmbulanceCaseStatusVS
 Id: ambulance-case-status-vs
 Title: "Ambulance Case Status"
-Description: "ValueSet for ambulance case status."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/AMBULANCE-CASE-STATUS"
+Description: "ValueSet for ambulance case status." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
 
-* include codes from system AmbulanceCaseStatusCS
+* include codes from system $ambulance-case-status-cs
 
 ValueSet: AmbulanceCaseRejectionReasonVS
 Id: ambulance-case-rejection-reason-vs
 Title: "Ambulance Case Rejection Reason"
-Description: "ValueSet for ambulance case rejection reasons."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/AMBULANCE-CASE-REJECTION-REASON"
+Description: "ValueSet for ambulance case rejection reasons." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
 
-* include codes from system AmbulanceCaseRejectionReasonCS
+* include codes from system $ambulance-case-rejection-reason-cs
 
 ValueSet: PulseStateClassificationVS
 Id: pulse-state-classification-vs
 Title: "Pulse State Classification"
-Description: "ValueSet for pulse state classification."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/PULSE-STATE-CLASSIFICATION"
+Description: "ValueSet for pulse state classification." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
 
-* include codes from system PulseStateClassificationCS
+* include codes from system $pulse-state-classification-cs
 
 ValueSet: BreathingStateClassificationVS
 Id: breathing-state-classification-vs
 Title: "Breathing State Classification"
-Description: "ValueSet for breathing state classification."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/BREATHING-STATE-CLASSIFICATION"
+Description: "ValueSet for breathing state classification." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
 
-* include codes from system BreathingStateClassificationCS
+* include codes from system $breathing-state-classification-cs
 
 ValueSet: ConditionStatusesVS
 Id: condition-statuses-vs
 Title: "Condition Statuses"
-Description: "ValueSet for condition severity statuses."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CONDITION-STATUSES"
+Description: "ValueSet for condition severity statuses." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
 
-* include codes from system ConditionStatusesCS
+* include codes from system $condition-statuses-cs
 
 ValueSet: AllergyReporterVS
 Id: allergy-reporter-vs
 Title: "Allergy Reporter"
-Description: "ValueSet identifying who reported an allergy."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/ALLERGY-REPORTER"
+Description: "ValueSet identifying who reported an allergy." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
 
-* include codes from system AllergyReporterCS
+* include codes from system $allergy-reporter-cs
 
 ValueSet: CodingSystemSourceVS
 Id: coding-system-source-vs
 Title: "Coding System Source"
-Description: "ValueSet identifying the source coding system."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CODING-SYSTEM-SOURCE"
+Description: "ValueSet identifying the source coding system." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
 
-* include codes from system CodingSystemSourceCS
+* include codes from system $coding-system-source-cs
 
 ValueSet: MedicationAdministrationRouteVS
 Id: medication-administration-route-vs
 Title: "Medication Administration Route"
-Description: "ValueSet for routes of medication administration."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/MEDICATION-ADMINISTRATION-ROUTE"
+Description: "ValueSet for routes of medication administration." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
 
-* include codes from system MedicationAdministrationRouteCS
+* include codes from system $medication-administration-route
 
 
 ValueSet: DoseUnitsVS
 Id: dose-units-vs
 Title: "Dose Units"
-Description: "ValueSet for units used in medication dosing."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/DOSE-UNITS"
+Description: "ValueSet for units used in medication dosing." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
 
-* include codes from system DoseUnitsCS
+* include codes from system $dose-units
 
 ValueSet: QuestionnaireCategoryVS
 Id: questionnaire-category-vs
 Title: "Questionnaire Category"
-Description: "ValueSet for classifying types of questionnaires."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/QUESTIONNAIRE-CATEGORY"
+Description: "ValueSet for classifying types of questionnaires." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
 
-* include codes from system QuestionnaireCategoryCS
+* include codes from system $questionnaire-category-cs
 
 ValueSet: EntryTypesVS
 Id: entry-types-vs
 Title: "Entry Types"
-Description: "ValueSet for types of clinical entries in the health record."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/ENTRY-TYPES"
+Description: "ValueSet for types of clinical entries in the health record." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
 
-* include codes from system EntryTypesCS
+* include codes from system $entry-types-cs
 
 ValueSet: AssessmentTypesVS
 Id: assessment-types-vs
 Title: "Assessment Types"
-Description: "ValueSet for types of clinical assessments."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/ASSESSMENT-TYPES"
+Description: "ValueSet for types of clinical assessments." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
 
-* include codes from system AssessmentTypesCS
+* include codes from system $assessment-types-cs
 
 ValueSet: InvestigationsVS
 Id: investigations-vs
 Title: "Investigation Codes ValueSet"
-Description: "ValueSet containing investigation codes for procedures."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-PPB/ValueSet/Investigations/"
+Description: "ValueSet containing investigation codes for procedures." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya" 
-* include codes from system InvestigationsCS
+* include codes from system $investigations-cs
 
 ValueSet: ManifestationVS
 Id: emergency-manifestation-vs
@@ -161,3 +147,11 @@ Description: "Clinical manifestations and symptoms."
 * ^experimental = false
 * include codes from system $manifestation-cs  
 
+
+ValueSet: VitalSignsVS
+Id: vital-signs-vs
+Title: "Vital Signs ValueSet"
+Description: "List of Vital Signs LOINC codes" 
+* ^status = #active
+* ^experimental = false
+* include codes from system $vital-signs-cs  

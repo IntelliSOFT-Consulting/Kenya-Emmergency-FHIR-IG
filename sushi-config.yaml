@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.kenyaEmergencyIG
-canonical: http://example.org
+canonical: http://localhost:8085/fhir
 name: Kenya-Emmergency-FHIR-IG
 title: Kenya Emmergency FHIR Implementation Guide (IG)
 description: Kenya Core FHIR Implementation Guide (IG) describes the FHIR profiles and extensions used to support healthcare data exchange in Kenya.
@@ -211,32 +211,5 @@ instanceOptions:
   # if InstanceOf references a profile:
   #
   # setId: always # always | standalone-only
-parameters:
-  special-url:
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ALLERGY-REPORTER
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-REJECTION-REASON
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-STATUS
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ASSESSMENT-TYPES
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/BREATHING-STATE-CLASSIFICATION
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CASE-PRIORITY
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CODING-SYSTEM-SOURCE
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CONDITION-STATUSES
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/DOSE-UNITS
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ENTRY-TYPES
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/MEDICATION-ADMINISTRATION-ROUTE
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/PULSE-STATE-CLASSIFICATION
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/QUESTIONNAIRE-CATEGORY
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/ALLERGY-REPORTER
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/AMBULANCE-CASE-REJECTION-REASON
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/AMBULANCE-CASE-STATUS
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/ASSESSMENT-TYPES
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/BREATHING-STATE-CLASSIFICATION
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CASE-PRIORITY
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CODING-SYSTEM-SOURCE
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CONDITION-STATUSES
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/DOSE-UNITS
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/ENTRY-TYPES
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/MEDICATION-ADMINISTRATION-ROUTE
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/PULSE-STATE-CLASSIFICATION
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/QUESTIONNAIRE-CATEGORY
-    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-PPB/ValueSet/Investigations/
+# parameters:
+  # special-url: 

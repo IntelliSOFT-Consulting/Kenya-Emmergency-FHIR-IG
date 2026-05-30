@@ -2855,7 +2855,7 @@ CodeSystem: CodingSystemSourceCS
 Id: coding-system-source
 Title: "Coding System Source"
 Description: "Identifies the terminology source from which a clinical code originates."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CODING-SYSTEM-SOURCE"
+// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CODING-SYSTEM-SOURCE"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2868,8 +2868,7 @@ Description: "Identifies the terminology source from which a clinical code origi
 CodeSystem: MedicationAdministrationRouteCS
 Id: medication-administration-route
 Title: "Medication Administration Route"
-Description: "Specifies the route by which a medication is administered."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/MEDICATION-ADMINISTRATION-ROUTE"
+Description: "Specifies the route by which a medication is administered." 
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -8806,3 +8805,26 @@ Description: "Defines Investigation Codes for Procedures."
 * #INV-00000941 "Ultrasound Leg Arteries Doppler Bilateral"
 * #INV-00000942 "Ultrasound Leg Arteries Doppler Unilateral Left"
 * #INV-00000944 "Ultrasound Leg Doppler Bilateral"
+
+
+CodeSystem: VitalSignsLOINCCS
+Id: vital-signs-loinc-cs
+Title: "Vital Signs LOINC Codes"
+Description: "LOINC codes commonly used for vital signs observations."
+ 
+* ^status = #active
+* ^content = #fragment
+* ^url = $vital-signs-cs
+* #8867-4 "Heart rate"
+* #9279-1 "Respiratory rate"
+* #8310-5 "Body temperature"
+* #59408-5 "Oxygen saturation by pulse oximetry"
+* #2708-6 "Oxygen saturation in arterial blood"
+* #8480-6 "Systolic blood pressure"
+* #8462-4 "Diastolic blood pressure"
+* #8478-0 "Mean blood pressure"
+* #29463-7 "Body weight"
+* #8302-2 "Body height"
+* #39156-5 "Body mass index"
+* #9843-4 "Head circumference"
+* #85353-1 "Vital signs panel"
