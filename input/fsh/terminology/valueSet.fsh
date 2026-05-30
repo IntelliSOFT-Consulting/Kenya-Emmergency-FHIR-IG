@@ -150,7 +150,14 @@ Description: "ValueSet containing investigation codes for procedures."
 * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-PPB/ValueSet/Investigations/"
 * ^version = "1.0"
 * ^status = #active
-* ^publisher = "Ministry of Health Kenya"
-
-// Include all codes from the CodeSystem
+* ^publisher = "Ministry of Health Kenya" 
 * include codes from system InvestigationsCS
+
+ValueSet: ManifestationVS
+Id: emergency-manifestation-vs
+Title: "Manifestation or Symptom ValueSet"
+Description: "Clinical manifestations and symptoms." 
+* ^status = #active
+* ^experimental = false
+* include codes from system $manifestation-cs  
+
