@@ -2737,7 +2737,7 @@ CodeSystem: CasePriorityCS
 Id: case-priority
 Title: "Case Priority"
 Description: "Defines priority levels for cases."
-// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CASE-PRIORITY"
+// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CASE-PRIORITY"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2753,7 +2753,7 @@ CodeSystem: AmbulanceCaseStatusCS
 Id: ambulance-case-status
 Title: "Ambulance Case Status"
 Description: "Defines the lifecycle statuses of an ambulance case."
-// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-STATUS"
+// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-STATUS"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2775,7 +2775,7 @@ CodeSystem: AmbulanceCaseRejectionReasonCS
 Id: ambulance-case-rejection-reason
 Title: "Ambulance Case Rejection Reason"
 Description: "Defines reasons for rejecting an ambulance case."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-REJECTION-REASON"
+// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-REJECTION-REASON"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2795,7 +2795,7 @@ CodeSystem: PulseStateClassificationCS
 Id: pulse-state-classification
 Title: "Pulse State Classification"
 Description: "Clinical classification of pulse rate states."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/PULSE-STATE-CLASSIFICATION"
+// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/PULSE-STATE-CLASSIFICATION"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2813,7 +2813,7 @@ CodeSystem: BreathingStateClassificationCS
 Id: breathing-state-classification
 Title: "Breathing State Classification"
 Description: "Clinical classification of breathing rate states."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/BREATHING-STATE-CLASSIFICATION"
+// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/BREATHING-STATE-CLASSIFICATION"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2829,7 +2829,7 @@ CodeSystem: ConditionStatusesCS
 Id: condition-statuses
 Title: "Condition Statuses"
 Description: "Clinical severity statuses for a patient condition."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CONDITION-STATUSES"
+// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CONDITION-STATUSES"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2842,7 +2842,7 @@ CodeSystem: AllergyReporterCS
 Id: allergy-reporter
 Title: "Allergy Reporter"
 Description: "Identifies the source reporting an allergy."
-* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ALLERGY-REPORTER"
+// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ALLERGY-REPORTER"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2855,7 +2855,7 @@ CodeSystem: CodingSystemSourceCS
 Id: coding-system-source
 Title: "Coding System Source"
 Description: "Identifies the terminology source from which a clinical code originates."
-// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CODING-SYSTEM-SOURCE"
+// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CODING-SYSTEM-SOURCE"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2882,7 +2882,7 @@ CodeSystem: DoseUnitsCS
 Id: dose-units
 Title: "Dose Units"
 Description: "Units used to specify medication doses."
-// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/DOSE-UNITS"
+// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/DOSE-UNITS"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2895,7 +2895,7 @@ CodeSystem: QuestionnaireCategoryCS
 Id: questionnaire-category
 Title: "Questionnaire Category"
 Description: "Categories used to classify questionnaires or assessments."
-// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/QUESTIONNAIRE-CATEGORY"
+// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/QUESTIONNAIRE-CATEGORY"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2910,7 +2910,7 @@ CodeSystem: EntryTypesCS
 Id: entry-types
 Title: "Entry Types"
 Description: "Defines the type of clinical entry recorded in the health record."
-// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ENTRY-TYPES"
+// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ENTRY-TYPES"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2927,7 +2927,7 @@ CodeSystem: AssessmentTypesCS
 Id: assessment-types
 Title: "Assessment Types"
 Description: "Specifies types of clinical assessments for patient evaluation."
-// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ASSESSMENT-TYPES"
+// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ASSESSMENT-TYPES"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -7421,10 +7421,7 @@ Description: "CodeSystem representing data elements used in KPS.A Client Registr
 * #KPS.A.DE.24 "Contact Email Address" "Email address of the contact person/legal guardian."
 * #KPS.A.DE.25 "Insurance number" "Health insurance identifier for verifying coverage and accessing services."
 
-
-Alias: KPSConditionStatusCS = https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-clinical-status
-Alias: KPSConditionVerificationCS = https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-verification-status
-
+ 
 
 
 CodeSystem: KPSBClinicalConsultationCodesCS
@@ -7557,8 +7554,7 @@ Description: "CodeSystem representing clinical status"
 
 CodeSystem: KPSConditionStatusCS
 Title: "KPS Clinical Condition Status CodeSystem"
-Id: kpsb-clinical-status
-* ^url = KPSConditionStatusCS
+Id: kpsb-clinical-status 
 * ^status = #active
 * #active "Active"
 * #inactive "Inactive"
@@ -7566,8 +7562,7 @@ Id: kpsb-clinical-status
 
 CodeSystem: KPSConditionVerificationCS
 Title: "KPS Condition Verification CodeSystem"
-Id: kpsb-verification-status
-* ^url = KPSConditionVerificationCS
+Id: kpsb-verification-status 
 * ^status = #active
 * #confirmed "Confirmed"
 * #unconfirmed "Unconfirmed"
