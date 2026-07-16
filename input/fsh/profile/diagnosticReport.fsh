@@ -1,6 +1,6 @@
 Profile: KenyaDiagnosticReport
 Parent: DiagnosticReport
-Id: kenya-diagnosticreport
+Id: ke-emmergency-diagnostic-report
 Title: "DiagnosticReport - Kenya"
 Description: "Kenya DiagnosticReport profile for laboratory and investigation results."
 

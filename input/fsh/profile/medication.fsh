@@ -1,6 +1,6 @@
 Profile: KenyaMedicationAdministration
 Parent: MedicationAdministration
-Id: kenya-medication-administration
+Id: ke-emmergency-medication-administration
 Title: "MedicationAdministration – Kenya Medication Administration"
 Description: "Represents medications administered to a patient in Kenya EMS and facility clinical workflows."
 

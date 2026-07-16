@@ -1,6 +1,6 @@
 Profile: KenyaVitalSignsObservation
 Parent: Observation
-Id: kenya-vital-signs-observation
+Id: ke-emmergency-vital-signs-observation
 Title: "Observation – Kenya Vital Signs"
 Description: "Represents vital signs observations captured in the Kenya EMS and clinical workflows."
 

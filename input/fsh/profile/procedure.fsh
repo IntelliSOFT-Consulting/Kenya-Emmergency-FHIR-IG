@@ -1,6 +1,6 @@
 Profile: KenyaProcedure
 Parent: Procedure
-Id: kenya-procedure
+Id: ke-emmergency-procedure
 Title: "Procedure – Kenya Clinical Procedure"
 Description: "Represents procedures performed during Kenya EMS and facility clinical workflows."
 

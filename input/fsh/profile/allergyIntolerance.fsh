@@ -1,6 +1,6 @@
 Profile: KenyaAllergyIntolerance
 Parent: AllergyIntolerance
-Id: kenya-allergy-intolerance
+Id: ke-emmergency-allergy-intolerance
 Title: "AllergyIntolerance – Kenya Allergy Profile"
 Description: "Represents patient allergies and intolerances recorded in Kenya EMS and facility workflows."
 
