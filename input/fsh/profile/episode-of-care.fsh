@@ -1,6 +1,6 @@
 Profile: KenyaAmbulanceEpisodeOfCare
 Parent: EpisodeOfCare
-Id: kenya-ambulance-episodeofcare
+Id: ke-emmergency-ambulance-episode-of-care
 Title: "EpisodeOfCare – Kenya Ambulance Case"
 Description: "Represents an ambulance case episode in the Kenya Emergency Medical Services workflow."
 

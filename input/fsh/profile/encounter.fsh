@@ -1,6 +1,6 @@
 Profile: KenyaAmbulanceEncounter
 Parent: Encounter
-Id: ke-ambulance-encounter
+Id: ke-emmergency-ambulance-encounter
 Title: "Kenya Ambulance Encounter"
 Description: "Encounter profile for ambulance services in Kenya."
 
@@ -10,7 +10,9 @@ Description: "Encounter profile for ambulance services in Kenya."
 * identifier 1..* MS
 
 * status 1..1 MS
-* status from AmbulanceCaseStatusVS (required)
+
+* extension contains KenyaAmbulanceCaseStatus named ambulanceCaseStatus 1..1 MS
+* extension[ambulanceCaseStatus] ^short = "Detailed Kenya ambulance case status"
 
 * class 1..1 MS
 

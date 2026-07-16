@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --no-install sushi --version)",
+      "Bash(xargs -I{} sh -c 'grep -m1 \"\\\\\"id\\\\\":\" {}')"
+    ]
+  }
+}

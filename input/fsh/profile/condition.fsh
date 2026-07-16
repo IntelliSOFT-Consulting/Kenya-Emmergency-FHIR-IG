@@ -1,6 +1,6 @@
 Profile: KenyaCondition
 Parent: Condition
-Id: kenya-condition
+Id: ke-emmergency-condition
 Title: "Condition – Kenya Clinical Condition"
 Description: "Represents a clinical condition recorded in Kenya EMS and facility workflows."
 

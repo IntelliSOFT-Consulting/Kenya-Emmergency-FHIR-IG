@@ -1,6 +1,6 @@
 Profile: KenyaCaseAssessment
 Parent: Observation
-Id: kenya-case-assessment
+Id: ke-emmergency-case-assessment
 Title: "Case Assessment - Kenya"
 Description: "Kenya Case Assessment profile representing structured clinical assessments."
 
