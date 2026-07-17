@@ -37,3 +37,18 @@ Description: "Kenya QuestionnaireResponse profile representing captured question
 * item 0..* MS
 * item ^short = "Response items"
 
+
+Instance: EmergencyAssessmentQuestionnaire
+InstanceOf: Questionnaire
+Usage: #definition
+Title: "Emergency Assessment Questionnaire"
+
+* url = $emergency-assessment-questionnaire
+* id = "emergency-assessment-questionnaire"
+* status = #active
+* name = "EmergencyAssessmentQuestionnaire"
+* title = "Emergency Assessment Questionnaire"
+
+* item[0].linkId = "gcs-total"
+* item[0].text = "Glasgow Coma Scale total"
+* item[0].type = #integer

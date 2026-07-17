@@ -41,5 +41,6 @@ Description: "Represents patient allergies and intolerances recorded in Kenya EM
 * reaction ^short = "Adverse reaction details"
 
 * reaction.manifestation 1..* MS
+* reaction.manifestation from ManifestationVS
 * reaction.manifestation ^short = "Clinical manifestations of the reaction"
 

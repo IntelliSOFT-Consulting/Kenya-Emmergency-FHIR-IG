@@ -35,7 +35,7 @@ Description: "Kenya Case Assessment profile representing structured clinical ass
 
 * component.code 1..1 MS
 * component.code ^short = "Assessment detail type"
-* component.code from https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/sources/HIE-REF/concepts/ASSESSMENT_DETAILS/ (required)
+* component.code from AssessmentTypesVS (extensible)
 
 * component.value[x] 0..1 MS
 * component.value[x] ^short = "Structured assessment finding"
