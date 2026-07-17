@@ -33,3 +33,48 @@ Alias: $AdministrativeGenderVS = http://hl7.org/fhir/ValueSet/administrative-gen
 Alias: $PatientLinkTypeVS = http://hl7.org/fhir/ValueSet/link-type
 Alias: $OfficialIdentifierSystem = http://hie.go.ke/fhir/identifier/patient-official-id
 Alias: $TemporaryTrackingSystem = http://hie.go.ke/fhir/identifier/patient-temp-tracking
+Alias: $ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
+Alias: $EncounterStatus = http://hl7.org/fhir/ValueSet/encounter-status
+Alias: $DispatchIdentifierSystem = http://hie.go.ke/fhir/identifier/dispatch-id
+Alias: $IncidentIdentifierSystem = http://hie.go.ke/fhir/identifier/incident-id
+
+Alias: $SCT = http://snomed.info/sct
+Alias: $LOINC = http://loinc.org
+Alias: $UCUM = http://unitsofmeasure.org
+
+Alias: $DeviceStatus =
+  http://hl7.org/fhir/ValueSet/device-status
+
+Alias: $EpisodeOfCareStatus =
+  http://hl7.org/fhir/ValueSet/episode-of-care-status
+
+Alias: $LocationStatus =
+  http://hl7.org/fhir/ValueSet/location-status
+
+Alias: $LocationMode =
+  http://hl7.org/fhir/ValueSet/location-mode
+
+Alias: $LocationPhysicalType =
+  http://terminology.hl7.org/CodeSystem/location-physical-type
+
+Alias: $ObservationStatus =
+  http://hl7.org/fhir/ValueSet/observation-status
+
+Alias: $ObservationCategory =
+  http://terminology.hl7.org/CodeSystem/observation-category
+
+Alias: $IncidentIdentifierSystem =
+  http://hie.go.ke/fhir/identifier/incident-id
+
+Alias: $DispatchIdentifierSystem =
+  http://hie.go.ke/fhir/identifier/dispatch-id
+
+Alias: $ResponderUnitIdentifierSystem =
+  http://hie.go.ke/fhir/identifier/responder-unit-id
+
+Alias: $VehicleRegistrationIdentifierSystem =
+  http://hie.go.ke/fhir/identifier/vehicle-registration
+
+Alias: $FacilityIdentifierSystem =
+  http://hie.go.ke/fhir/identifier/facility-id

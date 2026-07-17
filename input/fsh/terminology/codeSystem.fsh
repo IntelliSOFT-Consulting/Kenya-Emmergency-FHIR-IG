@@ -1,3 +1,489 @@
+CodeSystem: EMBreathingStatusCS
+Id: em-breathing-status
+Title: "Emergency Breathing Status"
+Description: """
+Caller- or practitioner-reported categories describing the patient's apparent
+breathing status.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #normal "Normal"
+    "Breathing appears normal."
+
+* #labored "Labored"
+    "Breathing appears difficult or labored."
+
+* #gasping "Gasping"
+    "The patient appears to be gasping or breathing agonal breaths."
+
+* #absent "Absent"
+    "No breathing is apparent."
+
+* #unknown "Unknown"
+    "Breathing status could not be established."
+
+
+CodeSystem: EMAVPUScaleCS
+Id: avpu-scale
+Title: "AVPU Scale"
+Description: """
+AVPU scale used to describe a patient's responsiveness.
+"""
+
+ 
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #A "Alert"
+    "The patient is alert and responds spontaneously."
+
+* #V "Responds to voice"
+    "The patient responds when spoken to."
+
+* #P "Responds to pain"
+    "The patient responds only to painful stimulation."
+
+* #U "Unresponsive"
+    "The patient does not respond to voice or painful stimulation."
+
+* #unknown "Unknown"
+    "The patient's responsiveness could not be established."
+
+CodeSystem: EMObservationCodeCS
+Id: em-observation-code
+Title: "Emergency Observation Code"
+Description: """
+Local codes for emergency medical observations not adequately represented by
+a single preferred external terminology code.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #caller-consciousness "Caller-reported level of consciousness"
+* #caller-breathing "Caller-reported breathing status"
+* #caller-active-bleeding "Caller-reported active bleeding"
+
+
+CodeSystem: EMObservationCategoryCS
+Id: em-observation-category
+Title: "Emergency Observation Category"
+Description: """
+Categories used to distinguish emergency observations by their source and
+clinical verification status.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #caller-reported "Caller reported"
+    "Information reported by a caller or dispatcher before direct clinical assessment."
+
+* #emt-assessed "Emergency practitioner assessed"
+    "Information established through direct assessment by an emergency practitioner."
+
+CodeSystem: EMClinicalAcuityCS
+Id: em-clinical-acuity
+Title: "Emergency Clinical Acuity"
+Description: """
+Clinical acuity assigned by an emergency practitioner after patient
+assessment. This terminology is distinct from dispatch priority.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #red "Red - Immediate"
+    "The patient requires immediate life-saving intervention."
+
+* #orange "Orange - Very urgent"
+    "The patient requires very urgent clinical intervention."
+
+* #yellow "Yellow - Urgent"
+    "The patient requires urgent clinical intervention."
+
+* #green "Green - Routine"
+    "The patient is stable and can safely wait for clinical intervention."
+
+* #blue "Blue - Non-urgent"
+    "The patient has a non-urgent condition."
+
+* #black "Black - Deceased or expectant"
+    "The patient is deceased or classified as expectant under the applicable mass-casualty protocol."
+
+* #unknown "Unknown"
+    "Clinical acuity has not been established."
+
+CodeSystem: EMPOCEncounterTypeCS
+Id: em-poc-encounter-type
+Title: "Emergency Point-of-Care Encounter Type"
+Description: """
+Types of direct patient-care interactions performed during emergency response.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #scene-care "Scene care"
+* #transport-care "Care during transport"
+* #scene-and-transport "Scene and transport care"
+* #handover "Facility handover"
+* #remote-clinical-support "Remote clinical support"
+
+
+
+CodeSystem: EMDestinationFacilityTypeCS
+Id: em-destination-facility-type
+Title: "Emergency Destination Facility Type"
+Description: """
+Types of healthcare locations that may receive an emergency patient.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #dispensary "Dispensary"
+* #health-centre "Health centre"
+* #hospital "Hospital"
+* #emergency-centre "Emergency centre"
+* #trauma-centre "Trauma centre"
+* #maternity "Maternity facility"
+* #mental-health-facility "Mental health facility"
+* #specialist-facility "Specialist facility"
+* #temporary-treatment-centre "Temporary treatment centre"
+* #other "Other destination facility"
+
+
+CodeSystem: EMEmergencyCentreCapabilityCS
+Id: em-emergency-centre-capability
+Title: "Emergency Centre Capability"
+Description: """
+Emergency-care capabilities available at a receiving health facility.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #none "No dedicated emergency centre"
+* #basic "Basic emergency capability"
+* #intermediate "Intermediate emergency capability"
+* #advanced "Advanced emergency capability"
+* #trauma-centre "Designated trauma centre"
+* #specialized "Specialized emergency service"
+* #unknown "Unknown emergency capability"
+
+CodeSystem: EMFacilityLevelCS
+Id: em-facility-level
+Title: "Kenya Health Facility Level"
+Description: """
+Levels used to classify health facilities in the Kenya health system.
+""" 
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #level-1 "Level 1"
+    "Community-level health service."
+
+* #level-2 "Level 2"
+    "Dispensary or clinic-level facility."
+
+* #level-3 "Level 3"
+    "Health centre-level facility."
+
+* #level-4 "Level 4"
+    "Primary referral or sub-county hospital."
+
+* #level-5 "Level 5"
+    "Secondary referral or county referral hospital."
+
+* #level-6 "Level 6"
+    "National tertiary referral hospital."
+
+* #unknown "Unknown"
+    "Facility level is unknown."
+
+
+CodeSystem: EMSceneLocationTypeCS
+Id: em-scene-location-type
+Title: "Emergency Scene Location Type"
+Description: """
+Types of physical locations at which emergency incidents may occur.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #residence "Residence"
+* #road "Road or highway"
+* #workplace "Workplace"
+* #school "School or educational institution"
+* #health-facility "Health facility"
+* #public-place "Public place"
+* #industrial-site "Industrial site"
+* #farm "Farm or agricultural location"
+* #water-body "Water body"
+* #remote-area "Remote or difficult-to-access area"
+* #unknown "Unknown location type"
+* #other "Other scene location"
+
+CodeSystem: EMCrewRoleCS
+Id: em-crew-role
+Title: "Emergency Responder Crew Role"
+Description: """
+Operational roles performed by personnel assigned to an emergency responder
+unit.
+"""
+
+* ^url =
+    "http://hie.go.ke/fhir/CodeSystem/em-crew-role"
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #crew-lead "Crew lead"
+    "Practitioner with operational responsibility for the response crew."
+
+* #emergency-physician "Emergency physician"
+    "Physician providing emergency medical care."
+
+* #paramedic "Paramedic"
+    "Practitioner qualified to provide advanced pre-hospital care."
+
+* #emt "Emergency medical technician"
+    "Practitioner qualified to provide pre-hospital emergency care."
+
+* #nurse "Emergency nurse"
+    "Nurse assigned to the emergency-response unit."
+
+* #driver "Emergency vehicle driver"
+    "Person responsible for operating the emergency-response vehicle."
+
+* #dispatcher "Dispatcher"
+    "Person coordinating assignment or movement of the unit."
+
+* #observer "Observer"
+    "Person attached to the crew in a non-clinical observer capacity."
+
+* #other "Other crew role"
+    "Another operational role within the emergency-response crew."
+
+
+CodeSystem: EMResponderUnitTypeCS
+Id: em-responder-unit-type
+Title: "Emergency Responder Unit Type"
+Description: """
+Types of vehicles and mobile units used during emergency response.
+"""
+
+* ^url =
+    "http://hie.go.ke/fhir/CodeSystem/em-responder-unit-type"
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #ambulance "Ambulance"
+    "A road vehicle equipped to provide emergency medical transport."
+
+* #advanced-life-support "Advanced life-support ambulance"
+    "An ambulance equipped and staffed to provide advanced life support."
+
+* #basic-life-support "Basic life-support ambulance"
+    "An ambulance equipped and staffed to provide basic life support."
+
+* #patient-transport "Patient transport vehicle"
+    "A vehicle intended primarily for non-emergency patient transport."
+
+* #rapid-response "Rapid-response vehicle"
+    "A response vehicle carrying emergency personnel and equipment but not normally transporting patients."
+
+* #motorcycle "Emergency-response motorcycle"
+    "A motorcycle used to rapidly transport an emergency responder."
+
+* #air-ambulance "Air ambulance"
+    "A fixed-wing or rotary-wing aircraft used for emergency medical transport."
+
+* #boat-ambulance "Boat ambulance"
+    "A watercraft used for emergency medical response and transport."
+
+* #command-unit "Command unit"
+    "A vehicle or mobile facility used to coordinate an emergency response."
+
+* #other "Other responder unit"
+    "Another type of emergency-response unit."
+
+CodeSystem: EMDigitalDispatchPriorityCS
+Id: em-dispatch-priority
+Title: "Emergency Dispatch Priority"
+Description: """
+Priority assigned to an emergency incident during call intake.
+"""
+
+//* ^url = "http://hie.go.ke/fhir/CodeSystem/em-dispatch-priority"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #P1 "Priority 1 – Immediate"
+    "Immediately life-threatening incident requiring the highest response priority."
+
+* #P2 "Priority 2 – Urgent"
+    "Potentially serious incident requiring an urgent response."
+
+* #P3 "Priority 3 – Non-urgent"
+    "Stable or non-life-threatening incident."
+
+* #P4 "Priority 4 – Advice or scheduled response"
+    "Incident suitable for advice, referral, or a scheduled response."
+
+* #unknown "Unknown"
+    "Dispatch priority has not been determined."
+
+CodeSystem: EMIncidentTypeCS
+Id: em-incident-type
+Title: "Emergency Incident Type"
+Description: """
+High-level classification of an emergency incident.
+"""
+
+//* ^url = "http://hie.go.ke/fhir/CodeSystem/em-incident-type"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #medical "Medical emergency"
+* #trauma "Trauma"
+* #obstetric "Obstetric emergency"
+* #paediatric "Paediatric emergency"
+* #mental-health "Mental health emergency"
+* #mass-casualty "Mass-casualty incident"
+* #fire "Fire-related incident"
+* #road-traffic "Road traffic incident"
+* #interfacility-transfer "Inter-facility transfer"
+* #other "Other emergency incident"
+
+CodeSystem: EMAgencyTypeCS
+Id: em-agency-type
+Title: "Emergency Supporting Agency Type"
+Description: """
+Types of organizations that may participate in an emergency response.
+"""
+
+//* ^url = "http://hie.go.ke/fhir/CodeSystem/em-agency-type"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #ems "Emergency medical services"
+* #fire "Fire and rescue service"
+* #police "Police service"
+* #security "Security service"
+* #disaster-management "Disaster management service"
+* #military "Military service"
+* #community-response "Community emergency response"
+* #other "Other supporting agency"
+
+CodeSystem: EMEncounterClassCS
+Id: em-encounter-class
+Title: "Emergency Encounter Class"
+Description: """
+Codes identifying emergency encounter settings that are not adequately
+represented by the standard ActCode code system.
+"""
+
+//* ^url = "http://hie.go.ke/fhir/CodeSystem/em-encounter-class"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #FLD "Emergency medical services field response"
+    "An emergency medical services encounter occurring in the community or during transport."
+
+CodeSystem: EMParticipantRoleCS
+Id: em-participant-role
+Title: "Emergency Encounter Participant Role"
+Description: """
+Roles performed by people or organizations involved in an emergency incident.
+"""
+
+//* ^url = "http://hie.go.ke/fhir/CodeSystem/em-participant-role"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #reporter "Reporter"
+    "Person who reported the emergency incident."
+
+* #dispatcher "Dispatcher"
+    "Call-handler or dispatcher who processed the emergency incident."
+
+* #supporting-agency "Supporting agency"
+    "Emergency-response organization participating alongside EMS."
+
+CodeSystem: EMCallerRelationshipCS
+Id: em-caller-relationship
+Title: "Emergency Caller Relationship"
+Description: """
+Relationship of an emergency caller to the patient.
+"""
+
+//* ^url = "http://hie.go.ke/fhir/CodeSystem/em-caller-relationship"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #self "Self"
+* #parent "Parent"
+* #spouse "Spouse"
+* #sibling "Sibling"
+* #relative "Other relative"
+* #caregiver "Caregiver"
+* #bystander "Bystander"
+* #other "Other"
+* #unknown "Unknown"
+
+
 CodeSystem: EMPriorityLevelCS
 Id: em-priority-level-cs
 Title: "EM Priority Level Code System"
@@ -9,21 +495,7 @@ Description: "Dispatcher-assigned priority levels at call intake."
 * #high "High"
 * #critical "Critical"
 
-CodeSystem: EMIncidentTypeCS
-Id: em-incident-type-cs
-Title: "EM Incident Type Code System"
-Description: "Codes describing the nature/category of an EMS incident."
-* ^status = #draft
-* ^caseSensitive = true
-* #medical "Medical"
-* #trauma "Trauma"
-* #obstetric "Obstetric"
-* #psychiatric "Psychiatric"
-* #burns "Burns"
-* #poisoning "Poisoning"
-* #environmental "Environmental"
-* #other "Other"
-
+ 
 
 CodeSystem: EMIdentifierTypeCS
 Id: em-id-type
@@ -32,7 +504,7 @@ Description: """
 Identifier types used to identify patients receiving emergency or
 pre-hospital services in Kenya.
 """
-* ^url = "http://hie.go.ke/fhir/CodeSystem/em-id-type"
+//* ^url = "http://hie.go.ke/fhir/CodeSystem/em-id-type"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
@@ -2782,7 +3254,7 @@ CodeSystem: CasePriorityCS
 Id: case-priority
 Title: "Case Priority"
 Description: "Defines priority levels for cases."
-// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CASE-PRIORITY"
+// // //* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CASE-PRIORITY"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2798,7 +3270,7 @@ CodeSystem: AmbulanceCaseStatusCS
 Id: ambulance-case-status
 Title: "Ambulance Case Status"
 Description: "Defines the lifecycle statuses of an ambulance case."
-// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-STATUS"
+// // //* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-STATUS"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2820,7 +3292,7 @@ CodeSystem: AmbulanceCaseRejectionReasonCS
 Id: ambulance-case-rejection-reason
 Title: "Ambulance Case Rejection Reason"
 Description: "Defines reasons for rejecting an ambulance case."
-// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-REJECTION-REASON"
+// //* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-REJECTION-REASON"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2840,7 +3312,7 @@ CodeSystem: PulseStateClassificationCS
 Id: pulse-state-classification
 Title: "Pulse State Classification"
 Description: "Clinical classification of pulse rate states."
-// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/PULSE-STATE-CLASSIFICATION"
+// //* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/PULSE-STATE-CLASSIFICATION"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2858,7 +3330,7 @@ CodeSystem: BreathingStateClassificationCS
 Id: breathing-state-classification
 Title: "Breathing State Classification"
 Description: "Clinical classification of breathing rate states."
-// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/BREATHING-STATE-CLASSIFICATION"
+// //* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/BREATHING-STATE-CLASSIFICATION"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2874,7 +3346,7 @@ CodeSystem: ConditionStatusesCS
 Id: condition-statuses
 Title: "Condition Statuses"
 Description: "Clinical severity statuses for a patient condition."
-// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CONDITION-STATUSES"
+// //* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CONDITION-STATUSES"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2887,7 +3359,7 @@ CodeSystem: AllergyReporterCS
 Id: allergy-reporter
 Title: "Allergy Reporter"
 Description: "Identifies the source reporting an allergy."
-// * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ALLERGY-REPORTER"
+// //* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ALLERGY-REPORTER"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2900,7 +3372,7 @@ CodeSystem: CodingSystemSourceCS
 Id: coding-system-source
 Title: "Coding System Source"
 Description: "Identifies the terminology source from which a clinical code originates."
-// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CODING-SYSTEM-SOURCE"
+// // //* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CODING-SYSTEM-SOURCE"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2927,7 +3399,7 @@ CodeSystem: DoseUnitsCS
 Id: dose-units
 Title: "Dose Units"
 Description: "Units used to specify medication doses."
-// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/DOSE-UNITS"
+// // //* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/DOSE-UNITS"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2940,7 +3412,7 @@ CodeSystem: QuestionnaireCategoryCS
 Id: questionnaire-category
 Title: "Questionnaire Category"
 Description: "Categories used to classify questionnaires or assessments."
-// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/QUESTIONNAIRE-CATEGORY"
+// // //* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/QUESTIONNAIRE-CATEGORY"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2955,7 +3427,7 @@ CodeSystem: EntryTypesCS
 Id: entry-types
 Title: "Entry Types"
 Description: "Defines the type of clinical entry recorded in the health record."
-// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ENTRY-TYPES"
+// // //* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ENTRY-TYPES"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -2972,7 +3444,7 @@ CodeSystem: AssessmentTypesCS
 Id: assessment-types
 Title: "Assessment Types"
 Description: "Specifies types of clinical assessments for patient evaluation."
-// // * ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ASSESSMENT-TYPES"
+// // //* ^url = "https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ASSESSMENT-TYPES"
 * ^version = "1.0"
 * ^status = #active
 * ^publisher = "Ministry of Health Kenya"
@@ -3023,7 +3495,7 @@ CodeSystem: RouteOfAdministrationCS
 Id: route-of-administration-cs
 Title: "Route of Administration CodeSystem"
 Description: "Route of administration codes from MOH PPB OCL."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/route-of-administration-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/route-of-administration-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -3076,7 +3548,7 @@ CodeSystem: UnitOfMeasureCS
 Id: unit-of-measure-cs
 Title: "Unit of Measure CodeSystem"
 Description: "Unit of measure codes from MOH PPB OCL."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/unit-of-measure-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/unit-of-measure-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -3580,7 +4052,7 @@ CodeSystem: FormulationCS
 Id: formulation-cs
 Title: "Formulation CodeSystem"
 Description: "Pharmaceutical formulation/dosage form codes from MOH PPB OCL."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/formulation-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/formulation-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -4183,7 +4655,7 @@ CodeSystem: ActiveComponentsCS
 Id: active-components-cs
 Title: "Active Components CodeSystem"
 Description: "Active pharmaceutical ingredient codes from MOH PPB OCL."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/active-components-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/active-components-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6826,7 +7298,7 @@ CodeSystem: MedicationRequestStatusReasonCS
 Id: medication-request-status-reason-cs
 Title: "MedicationRequest Status Reason CodeSystem"
 Description: "Reasons for a MedicationRequest status change (e.g. cancelled, on-hold). Source: MOH-KENYA OCL MEDICATIONREQUEST-STATUS-REASON."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/medication-request-status-reason-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/medication-request-status-reason-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6853,7 +7325,7 @@ CodeSystem: MedicationDispenseStatusReasonCS
 Id: medication-dispense-status-reason-cs
 Title: "MedicationDispense Status Reason CodeSystem"
 Description: "Reasons for a MedicationDispense status (e.g. out-of-stock, patient refused). Source: MOH-KENYA OCL MEDICATIONDISPENSE-STATUS-REASON."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/medication-dispense-status-reason-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/medication-dispense-status-reason-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6874,7 +7346,7 @@ CodeSystem: MedicationAdminStatusReasonCS
 Id: medication-admin-status-reason-cs
 Title: "MedicationAdministration Status Reason CodeSystem"
 Description: "Reasons for a MedicationAdministration status (e.g. patient refused, not available). Source: MOH-KENYA OCL MEDICATION-ADMIN-STATUS-REASON."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/medication-admin-status-reason-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/medication-admin-status-reason-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6895,7 +7367,7 @@ CodeSystem: ReasonMedicationStatusCS
 Id: reason-medication-status-cs
 Title: "Reason Medication Status CodeSystem"
 Description: "Reasons for a MedicationStatement status (e.g. stopped, completed). Source: MOH-KENYA OCL REASON-MEDICATION-STATUS-CODES."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/reason-medication-status-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/reason-medication-status-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6921,7 +7393,7 @@ CodeSystem: ConditionStageCS
 Id: condition-stage-cs
 Title: "Condition Stage CodeSystem"
 Description: "Staging codes for oncology and other staged conditions. Source: MOH-KENYA OCL CONDITION-STAGE."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/condition-stage-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/condition-stage-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6943,7 +7415,7 @@ CodeSystem: MedAdminRouteCS
 Id: med-admin-route-cs
 Title: "Medication Administration Route CodeSystem"
 Description: "Route of administration codes used in MedicationAdministration. Source: MOH-KENYA OCL MEDICATION-ADMINISTRATION-ROUTE."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/med-admin-route-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/med-admin-route-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6960,7 +7432,7 @@ CodeSystem: ObservationMethodsCS
 Id: observation-methods-cs
 Title: "Observation Methods CodeSystem"
 Description: "Methods used to perform clinical observations. Source: MOH-KENYA OCL OBSERVATION-METHODS."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/observation-methods-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/observation-methods-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -6992,7 +7464,7 @@ CodeSystem: AdditionalInstructionCS
 Id: additional-instruction-cs
 Title: "Additional Instruction Codes CodeSystem"
 Description: "Supplementary instructions for dispensed or administered medication. Source: MOH-KENYA OCL ADDITIONAL-INSTRUCTION-CODES."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/additional-instruction-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/additional-instruction-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -7031,7 +7503,7 @@ CodeSystem: ApproachSiteCS
 Id: approach-site-cs
 Title: "Approach Site Codes CodeSystem"
 Description: "Body site codes for site of medication administration. Source: MOH-KENYA OCL APPROACH-SITE-CODES."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/approach-site-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/approach-site-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -7065,7 +7537,7 @@ CodeSystem: CarePlanCategoryCS
 Id: care-plan-category-cs
 Title: "Care Plan Category CodeSystem"
 Description: "Category codes for care plan types. Source: MOH-KENYA OCL CARE-PLAN-CATEGORY."
-////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/care-plan-category-cs"
+//////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/care-plan-category-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -7094,7 +7566,7 @@ CodeSystem: ProcedureCodeCS
 Id: procedure-code-cs
 Title: "Procedure Code CodeSystem"
 Description: "Clinical procedure codes used in care plan activities and service requests. Source: MOH-KENYA OCL PROCEDURE-CODE."
-// ////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/procedure-code-cs"
+// //////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/procedure-code-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -7128,7 +7600,7 @@ CodeSystem: ManifestationCS
 Id: manifestation-cs
 Title: "Manifestation or Symptom CodeSystem"
 Description: "Clinical manifestations and symptoms used in allergy reactions, conditions, and observations. Source: MOH-KENYA OCL MANIFESTATION-OR-SYMPTOM."
-// ////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/manifestation-cs"
+// //////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/manifestation-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -7169,7 +7641,7 @@ CodeSystem: ConditionClinicalStatusCS
 Id: condition-clinical-status-cs
 Title: "Condition Clinical Status CodeSystem"
 Description: "Clinical status codes for Condition resources. Source: MOH-KENYA OCL CONDITION-CLINICAL-STATUS (supplemented with standard FHIR codes)."
-//////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/condition-clinical-status-cs"
+////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/condition-clinical-status-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -7190,7 +7662,7 @@ CodeSystem: ConditionCategoryCS
 Id: condition-category-cs
 Title: "Condition Category CodeSystem"
 Description: "Category codes for Condition resources. Based on FHIR standard condition-category codes (OCL collection was empty)."
-//////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/condition-category-cs"
+////////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/condition-category-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -7432,7 +7904,7 @@ CodeSystem: KPSAClientRegistrationCodesCS
 Id: kpsa-client-registration-codes
 Title: "KPS.A Client Registration Data Elements"
 Description: "CodeSystem representing data elements used in KPS.A Client Registration."
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsa-client-registration-codes"
+//////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsa-client-registration-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -7473,7 +7945,7 @@ CodeSystem: KPSBClinicalConsultationCodesCS
 Id: kpsb-clinical-consultation-codes
 Title: "KPS.B Clinical Consultation Data Elements"
 Description: "CodeSystem representing clinical consultation data elements under the Kenya Patient Summary (KPS.B)."
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-clinical-consultation-codes"
+//////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-clinical-consultation-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -7584,7 +8056,7 @@ CodeSystem: KPSClinicalStatusCodesCS
 Id: kpsb-clinical-status-codes
 Title: "KPS.B Clinical Consultation Data Elements"
 Description: "CodeSystem representing clinical status"
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-clinical-status-codes"
+//////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsb-clinical-status-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -7618,7 +8090,7 @@ CodeSystem: KPSCDiagnosticsCodesCS
 Id: kpsc-diagnostics-codes
 Title: "KPS.C Diagnostics Data Elements"
 Description: "CodeSystem representing diagnostic data elements under the Kenya Patient Summary (KPS.C)."
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsc-diagnostics-codes"
+//////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsc-diagnostics-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -7665,7 +8137,7 @@ CodeSystem: KPSDTreatmentCodesCS
 Id: kpsd-treatment-codes
 Title: "KPS.D Treatment Data Elements"
 Description: "CodeSystem representing treatment and medication-related data elements under the Kenya Patient Summary (KPS.D)."
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsd-treatment-codes"
+//////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsd-treatment-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -7714,7 +8186,7 @@ CodeSystem: KPSEImmunizationCodesCS
 Id: kpse-immunization-codes
 Title: "KPS.E Immunization Data Elements"
 Description: "CodeSystem representing immunization-related data elements under the Kenya Patient Summary (KPS.E)."
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpse-immunization-codes"
+//////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpse-immunization-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -7753,7 +8225,7 @@ CodeSystem: KPSGReferralCodesCS
 Id: kpsg-referral-codes
 Title: "KPS.G Referral Data Elements"
 Description: "CodeSystem representing referral-related data elements under the Kenya Patient Summary (KPS.G)."
-////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsg-referral-codes"
+//////* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/kpsg-referral-codes"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -8854,7 +9326,7 @@ Description: "LOINC codes commonly used for vital signs observations."
  
 * ^status = #active
 * ^content = #fragment
-* ^url = $vital-signs-cs
+//* ^url = $vital-signs-cs
 * #8867-4 "Heart rate"
 * #9279-1 "Respiratory rate"
 * #8310-5 "Body temperature"
