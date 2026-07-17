@@ -224,8 +224,7 @@ Title: "Questionnaire - Glasgow Coma Scale"
 Description: "Example questionnaire definition used to capture Glasgow Coma Scale findings in emergency care." 
 
 
-* id = "kenya-emergency-gcs-questionnaire"
-* url = $emergency-assessment-questionnaire
+* id = "kenya-emergency-gcs-questionnaire" 
 * status = #active
 * subjectType[0] = #Patient
 * item[0].linkId = "gcs-total"
