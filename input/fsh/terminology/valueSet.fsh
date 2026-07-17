@@ -1,3 +1,20 @@
+ValueSet: EMIncidentTypeVS
+Id: em-incident-type-vs
+Title: "EM Incident Type ValueSet"
+Description: "Value set for EpisodeOfCare.type — the nature/category of the incident. Maps to incident.type."
+* ^status = #draft
+* include codes from system EMIncidentTypeCS
+
+  
+
+
+ValueSet: EMPriorityLevelVS
+Id: em-priority-level-vs
+Title: "EM Priority Level ValueSet"
+Description: "Value set for the incidentPriority extension. Maps to incident.priority_level."
+* ^status = #draft
+* include codes from system EMPriorityLevelCS
+
 ValueSet: EMIdentifierTypeVS
 Id: em-id-type
 Title: "Emergency Patient Identifier Type ValueSet"

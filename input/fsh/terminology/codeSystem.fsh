@@ -1,3 +1,30 @@
+CodeSystem: EMPriorityLevelCS
+Id: em-priority-level-cs
+Title: "EM Priority Level Code System"
+Description: "Dispatcher-assigned priority levels at call intake."
+* ^status = #draft
+* ^caseSensitive = true
+* #low "Low"
+* #medium "Medium"
+* #high "High"
+* #critical "Critical"
+
+CodeSystem: EMIncidentTypeCS
+Id: em-incident-type-cs
+Title: "EM Incident Type Code System"
+Description: "Codes describing the nature/category of an EMS incident."
+* ^status = #draft
+* ^caseSensitive = true
+* #medical "Medical"
+* #trauma "Trauma"
+* #obstetric "Obstetric"
+* #psychiatric "Psychiatric"
+* #burns "Burns"
+* #poisoning "Poisoning"
+* #environmental "Environmental"
+* #other "Other"
+
+
 CodeSystem: EMIdentifierTypeCS
 Id: em-id-type
 Title: "Emergency Patient Identifier Type"
