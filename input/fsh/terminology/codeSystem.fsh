@@ -1,3 +1,21 @@
+CodeSystem: EMIdentifierTypeCS
+Id: em-id-type
+Title: "Emergency Patient Identifier Type"
+Description: """
+Identifier types used to identify patients receiving emergency or
+pre-hospital services in Kenya.
+"""
+* ^url = "http://hie.go.ke/fhir/CodeSystem/em-id-type"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #national-id "National ID" "Kenyan national identity card number."
+* #passport "Passport" "Passport number."
+* #alien-id "Alien ID" "Kenyan alien identification number."
+* #huduma-namba "Huduma Namba" "Kenya Huduma Namba identifier."
+
 
 CodeSystem: ExclusionCS
 Title: "Exclusion Code System"

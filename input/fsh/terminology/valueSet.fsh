@@ -1,3 +1,13 @@
+ValueSet: EMIdentifierTypeVS
+Id: em-id-type
+Title: "Emergency Patient Identifier Type ValueSet"
+Description: "Allowed official identifier types for an emergency patient in Kenya."
+* ^url = "http://hie.go.ke/fhir/ValueSet/em-id-type"
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMIdentifierTypeCS
+
 ValueSet: CasePriorityVS
 Id: case-priority-vs
 Title: "Case Priority"
