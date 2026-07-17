@@ -1,3 +1,206 @@
+ValueSet: EMBreathingStatusVS
+Id: em-breathing-status
+Title: "Emergency Breathing Status Value Set"
+Description: """
+Permitted breathing-status values.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMBreathingStatusCS
+
+
+ValueSet: EMAVPUScaleVS
+Id: avpu-scale
+Title: "AVPU Scale Value Set"
+Description: """
+Permitted AVPU responsiveness values.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMAVPUScaleCS
+
+ValueSet: EMClinicalAcuityVS
+Id: em-clinical-acuity
+Title: "Emergency Clinical Acuity Value Set"
+ 
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMClinicalAcuityCS
+
+ValueSet: EMPOCEncounterTypeVS
+Id: em-poc-encounter-type
+Title: "Emergency Point-of-Care Encounter Type Value Set"
+ 
+
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMPOCEncounterTypeCS
+
+ValueSet: EMDestinationFacilityTypeVS
+Id: em-destination-facility-type
+Title: "Emergency Destination Facility Type Value Set"
+Description: """
+Permitted facility types for an emergency transport destination.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMDestinationFacilityTypeCS
+
+
+ValueSet: EMEmergencyCentreCapabilityVS
+Id: em-emergency-centre-capability
+Title: "Emergency Centre Capability Value Set"
+Description: """
+Permitted emergency-care capability classifications for destination
+facilities.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMEmergencyCentreCapabilityCS
+
+ValueSet: EMFacilityLevelVS
+Id: em-facility-level
+Title: "Kenya Health Facility Level Value Set"
+Description: """
+Permitted Kenya health-system facility levels.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMFacilityLevelCS
+
+ValueSet: EMSceneLocationTypeVS
+Id: em-scene-location-type
+Title: "Emergency Scene Location Type Value Set"
+Description: """
+Permitted classifications for emergency incident scene locations.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMSceneLocationTypeCS
+
+
+
+ValueSet: EMCrewRoleVS
+Id: em-crew-role
+Title: "Emergency Responder Crew Role Value Set"
+Description: """
+Permitted roles for personnel assigned to an emergency responder unit.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMCrewRoleCS
+
+
+
+ValueSet: EMResponderUnitTypeVS
+Id: em-responder-unit-type
+Title: "Emergency Responder Unit Type Value Set"
+Description: """
+Permitted types of vehicles and mobile units participating in an emergency
+response.
+"""
+ 
+
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMResponderUnitTypeCS
+
+ValueSet: EMDigitalDispatchPriorityVS
+Id: em-dispatch-priority
+Title: "Emergency Dispatch Priority Value Set"
+Description: """
+Permitted dispatch priorities assigned during emergency call intake.
+"""
+ 
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMDigitalDispatchPriorityCS
+
+
+ValueSet: EMIncidentTypeVS
+Id: em-incident-type
+Title: "Emergency Incident Type Value Set"
+Description: """
+Permitted high-level classifications of emergency incidents.
+"""
+ 
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMIncidentTypeCS
+
+
+ValueSet: EMCallerRelationshipVS
+Id: em-caller-relationship
+Title: "Emergency Caller Relationship Value Set"
+Description: """
+Permitted relationships between an emergency caller and the patient.
+"""
+ 
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMCallerRelationshipCS
+
+ValueSet: EMAgencyTypeVS
+Id: em-agency-type
+Title: "Emergency Supporting Agency Type Value Set"
+Description: """
+Permitted types of emergency-response organizations participating in an
+incident.
+"""
+ 
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMAgencyTypeCS
+
+
+ 
+
+
+ValueSet: EMPriorityLevelVS
+Id: em-priority-level-vs
+Title: "EM Priority Level ValueSet"
+Description: "Value set for the incidentPriority extension. Maps to incident.priority_level."
+* ^status = #draft
+* include codes from system EMPriorityLevelCS
+
+ValueSet: EMIdentifierTypeVS
+Id: em-id-type
+Title: "Emergency Patient Identifier Type ValueSet"
+Description: "Allowed official identifier types for an emergency patient in Kenya."
+//* ^url = "http://hie.go.ke/fhir/ValueSet/em-id-type"
+* ^status = #active
+* ^experimental = false
+
+* include codes from system EMIdentifierTypeCS
+
 ValueSet: CasePriorityVS
 Id: case-priority-vs
 Title: "Case Priority"
