@@ -15,11 +15,6 @@ reconciliation of temporary Patient records with verified Patient records.
 * ^experimental = false
 * ^abstract = false
 
-
-// --------------------------------------------------------------------------
-// Extensions
-// --------------------------------------------------------------------------
-
 * extension contains
     EMUnidentifiedPatient named unidentifiedPatient 1..1 MS and
     EMPatientIdentityVerified named patientIdentityVerified 0..1 MS and
@@ -62,12 +57,7 @@ An artificial Patient.birthDate must not be calculated from this value.
     "Triage-level adult or minor status"
 
 * extension[isAdult] ^definition = "Indicates whether the patient is considered an adult during emergency triage.This assertion is captured independently of birthDate and approximateAge because it may be required immediately for clinical protocol and consent decisions."
-
-
-// --------------------------------------------------------------------------
-// Identifiers
-// --------------------------------------------------------------------------
-
+ 
 * identifier 0..* MS
 
 * identifier ^short =
@@ -81,12 +71,7 @@ An artificial Patient.birthDate must not be calculated from this value.
 * identifier contains
     nationalId 0..1 MS and
     tempTrackingNumber 0..1 MS
-
-
-// --------------------------------------------------------------------------
-// Official identifier
-// --------------------------------------------------------------------------
-
+ 
 * identifier[nationalId] ^short = "Known patient's official identifier"
 
 * identifier[nationalId] ^definition = "An official identifier presented or verified for the patient, such as a Kenyan National ID, passport, Alien ID, or Huduma Namba."
@@ -103,12 +88,7 @@ An artificial Patient.birthDate must not be calculated from this value.
 
 * identifier[nationalId].value ^short =
     "Literal official identification number"
-
-
-// --------------------------------------------------------------------------
-// Temporary emergency tracking number
-// --------------------------------------------------------------------------
-
+ 
 * identifier[tempTrackingNumber] ^short =
     "Emergency temporary patient tracking number"
 
@@ -125,12 +105,7 @@ An artificial Patient.birthDate must not be calculated from this value.
 
 * identifier[tempTrackingNumber].value ^short =
     "System-generated emergency tracking number"
-
-
-// --------------------------------------------------------------------------
-// Record status
-// --------------------------------------------------------------------------
-
+ 
 * active 1..1 MS
 
 * active ^short =
@@ -139,10 +114,7 @@ An artificial Patient.birthDate must not be calculated from this value.
 * active ^definition = "Indicates whether this Patient record is currently active. A temporary unidentified Patient record remains active while it is being used. It may be set to false after the record has been superseded and linked to a verified Patient record."
 
 
-// --------------------------------------------------------------------------
-// Patient name
-// --------------------------------------------------------------------------
-
+ 
 * name 0..1 MS
 
 * name ^short =
@@ -161,11 +133,7 @@ An artificial Patient.birthDate must not be calculated from this value.
 
 * name.given 0..*
 
-
-// --------------------------------------------------------------------------
-// Gender
-// --------------------------------------------------------------------------
-
+ 
 * gender 0..1 MS
 
 * gender ^short =
@@ -175,11 +143,7 @@ An artificial Patient.birthDate must not be calculated from this value.
 
 * gender from $AdministrativeGenderVS (required)
 
-
-// --------------------------------------------------------------------------
-// Date of birth
-// --------------------------------------------------------------------------
-
+ 
 * birthDate 0..1 MS
 
 * birthDate ^short =
@@ -187,11 +151,7 @@ An artificial Patient.birthDate must not be calculated from this value.
 
 * birthDate ^definition = "The patient's exact date of birth when known or verified.An estimated date of birth must not be calculated from the approximateAge extension."
 
-
-// --------------------------------------------------------------------------
-// Deceased status
-// --------------------------------------------------------------------------
-
+ 
 * deceased[x] 0..1 MS
 
 * deceasedBoolean ^short =
@@ -204,11 +164,7 @@ An artificial Patient.birthDate must not be calculated from this value.
 
 * deceasedDateTime ^definition = "The known date and time at which the patient died or was pronounced deceased.Use this element instead of deceasedBoolean when the time is available."
 
-
-// --------------------------------------------------------------------------
-// Optional contact information
-// --------------------------------------------------------------------------
-
+ 
 * telecom 0..*
 
 * telecom ^short =
@@ -222,12 +178,7 @@ An artificial Patient.birthDate must not be calculated from this value.
     "Patient home address when available"
 
 * address ^definition = "The patient's home address when known.This element is not marked Must Support because address information is rarely available during emergency intake and may be completed later during facility registration."
-
-
-// --------------------------------------------------------------------------
-// Patient record reconciliation
-// --------------------------------------------------------------------------
-
+ 
 * link 0..* MS
 
 * link ^short =
