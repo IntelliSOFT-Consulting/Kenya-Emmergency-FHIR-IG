@@ -3,9 +3,9 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.kenyaEmergencyIG
-canonical: http://localhost:8085/fhir
-name: Kenya-Emmergency-FHIR-IG
+id: fhir.kenyaEmmergencyIG
+canonical: https://nshr-uat.sha.go.ke/fhir
+name: KenyaEmmergencyFHIRIG
 title: Kenya Emmergency FHIR Implementation Guide (IG)
 description: Kenya Core FHIR Implementation Guide (IG) describes the FHIR profiles and extensions used to support healthcare data exchange in Kenya.
 status: draft # draft | active | retired | unknown
@@ -16,7 +16,7 @@ releaseLabel: ci-build
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: Intellisoft Consulting Ltd.
+  name: DHA Ltd.
   url: http://example.org/example-publisher
   # email: test@example.org
 
@@ -61,6 +61,36 @@ publisher:
 # http://build.fhir.org/codesystem-guide-parameter-code.html
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
+#
+parameters:
+  special-url:
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CASE-PRIORITY
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-STATUS
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-REJECTION-REASON
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/PULSE-STATE-CLASSIFICATION
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/BREATHING-STATE-CLASSIFICATION
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CONDITION-STATUSES
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ALLERGY-REPORTER
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CODING-SYSTEM-SOURCE
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/MEDICATION-ADMINISTRATION-ROUTE
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/DOSE-UNITS
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/QUESTIONNAIRE-CATEGORY
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ENTRY-TYPES
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/ASSESSMENT-TYPES
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CASE-PRIORITY
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/AMBULANCE-CASE-STATUS
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/AMBULANCE-CASE-REJECTION-REASON
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/PULSE-STATE-CLASSIFICATION
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/BREATHING-STATE-CLASSIFICATION
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CONDITION-STATUSES
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/ALLERGY-REPORTER
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/CODING-SYSTEM-SOURCE
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/MEDICATION-ADMINISTRATION-ROUTE
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/DOSE-UNITS
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/QUESTIONNAIRE-CATEGORY
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/ENTRY-TYPES
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/ASSESSMENT-TYPES
+    - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-PPB/ValueSet/Investigations/
 #
 # parameters:
 #   excludettl: true

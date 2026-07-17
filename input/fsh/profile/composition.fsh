@@ -1,6 +1,6 @@
 Profile: KenyaComposition
 Parent: Composition
-Id: kenya-composition
+Id: ke-emmergency-composition
 Title: "Composition - Kenya"
 Description: "Kenya Composition profile representing a clinical or administrative entry composition."
 
