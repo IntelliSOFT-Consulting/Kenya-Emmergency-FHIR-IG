@@ -34,7 +34,7 @@ after direct clinical assessment.
 * code 1..1 MS
 
 * subject 1..1 MS
-* subject only Reference(KenyaEmergencyPatient)
+* subject only Reference(Patient)
 
 * encounter 1..1 MS
 * encounter only Reference(EMIncidentEncounter)
