@@ -1,6 +1,6 @@
 Profile: KenyaDocumentReference
 Parent: DocumentReference
-Id: ke-emmergency-document-reference
+Id: ke-emergency-document-reference
 Title: "DocumentReference - Kenya"
 Description: "Kenya DocumentReference profile for clinical and administrative documents."
 
