@@ -3,22 +3,44 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.kenyaEmmergencyIG
+# ╭──────────────────────────────────────────────────────────────────────────────────────────╮
+# │  Kenya Emergency Medical Services (EMS) FHIR Implementation Guide                       │
+# │  Publisher: Digital Health Agency (DHA), Republic of Kenya                              │
+# ╰──────────────────────────────────────────────────────────────────────────────────────────╯
+
+id: fhir.kenyaEmergencyIG
 canonical: https://nshr-uat.sha.go.ke/fhir
-name: KenyaEmmergencyFHIRIG
-title: Kenya Emmergency FHIR Implementation Guide (IG)
-description: Kenya Core FHIR Implementation Guide (IG) describes the FHIR profiles and extensions used to support healthcare data exchange in Kenya.
+name: KenyaEmergencyFHIRIG
+title: "Kenya Emergency FHIR Implementation Guide"
+description: >-
+  FHIR R4 Implementation Guide for Kenya Emergency Medical Services (EMS), developed by the
+  Digital Health Agency (DHA) under the Ministry of Health, Republic of Kenya. This guide
+  defines standardized FHIR profiles, extensions, code systems and value sets to enable
+  interoperable emergency-care data exchange — from dispatch and ambulance response through
+  point-of-care treatment and facility handover — across Kenya's emergency response ecosystem
+  and the Social Health Authority (SHA) claims system.
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2025+
+copyrightYear: 2026+
 releaseLabel: ci-build
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+jurisdiction: urn:iso:std:iso:3166#KE "Kenya"
+
 publisher:
-  name: DHA Ltd.
-  url: http://example.org/example-publisher
-  # email: test@example.org
+  name: Digital Health Agency (DHA), Kenya
+  url: https://dha.go.ke
+  email: info@dha.go.ke
+
+contact:
+  - name: Digital Health Agency Kenya – FHIR Team
+    telecom:
+      - system: email
+        value: info@dha.go.ke
+        use: work
+      - system: url
+        value: https://dha.go.ke
+        use: work
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -63,6 +85,7 @@ publisher:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
 parameters:
+  shownav: true
   special-url:
     - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/CASE-PRIORITY
     - https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/CodeSystem/AMBULANCE-CASE-STATUS
@@ -96,6 +119,17 @@ parameters:
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
+
+# ╭──────────────────────────────────────────────pages─────────────────────────────────────────────╮
+pages:
+  index.md:
+    title: Home
+  background.md:
+    title: Background
+  use-cases.md:
+    title: Use Cases
+  downloads.md:
+    title: Downloads
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
 # │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
@@ -106,7 +140,15 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Background: background.html
+  "Use Cases": use-cases.html
+  Artifacts:
+    Profiles: artifacts.html#structures-resource-profiles
+    Extensions: artifacts.html#structures-extension-definitions
+    Value Sets: artifacts.html#terminology-value-sets
+    Code Systems: artifacts.html#terminology-code-systems
+    Examples: artifacts.html#example-example-instances
+  Downloads: downloads.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

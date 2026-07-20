@@ -1,0 +1,155 @@
+<style type="text/css">
+/* =================================================================
+   Digital Health Agency (DHA) Kenya — Emergency FHIR IG Brand Theme
+   Header (title bar) : #000000   Black — logo/title/version area
+   Navbar (menu bar)   : #0070C0   DHA medium blue — Home/Background/etc. links
+   Footer              : #000000   Black bottom chrome
+   Primary Navy  : #003366   DHA deep blue
+   Kenya Green   : #006B3F   Kenyan flag green
+   Kenya Red     : #BB0000   Kenyan flag red
+   ================================================================= */
+
+:root {
+  --ig-status-text-color:       #FFFFFF;
+  --navbar-bg-color:            #0070C0;
+  --footer-bg-color:            #000000;
+  --footer-container-bg-color:  #000000;
+  --stripe-bg-color:            #BB0000;
+  --btn-hover-color:            #004F9F;
+  --btn-active-color:           #003366;
+  --btn-text-color:             #FFFFFF;
+  --btn-gradient-start-color:   #0070C0;
+  --btn-gradient-end-color:     #005A9E;
+  --btn-gradient-start-color-alpha: #ff0070C0;
+  --btn-gradient-end-color-alpha:   #ff005A9E;
+  --link-color:                 #0070C0;
+  --link-hover-color:           #003366;
+  --publish-box-bg-color:       #FFF8DC;
+  --publish-box-border:         1px solid #B8860B;
+  --toc-box-bg-color:           #EBF5FF;
+  --toc-box-border:             1px solid #0070C0;
+  --stu-note-background-color:  #F0F8FF;
+  --stu-note-border-left-color: #0070C0;
+  --ig-header-color:            #000000;
+  --ig-header-container-color:  #000000;
+  --footer-nav-bg-color:        #F0F4F8;
+  --footer-text-color:          #FFFFFF;
+  --footer-hyperlink-text-color:#7EC8E3;
+  --footer-highlight-text-color:#FFE066;
+  --breadcrumb-bg-color:        #F0F4F8;
+  --breadcrumb-text-color:      #003366;
+  --dragon-background-color:    #F8FBFF;
+  --dragon-text-color:          #001E3C;
+  --translation-background-color:#EFF3F7;
+  --translation-text-color:     #003366;
+}
+
+/* ------ Table header: DHA navy ------ */
+.table th.inverted {
+  background-color: #003366;
+  color: #ffffff;
+}
+
+/* ------ Nav tabs: DHA blue accent ------ */
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  color: #003366;
+  border-color: #0070C0 #0070C0 transparent;
+}
+.nav-tabs { border-bottom-color: #0070C0; }
+
+/* ------ Hero banner ------ */
+.em-hero {
+  background: linear-gradient(135deg, #003366 0%, #0070C0 55%, #BB0000 100%);
+  color: #ffffff;
+  padding: 38px 30px 32px;
+  border-radius: 5px;
+  margin-bottom: 28px;
+}
+.em-hero h1 {
+  color: #ffffff;
+  font-size: 1.9em;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(255,255,255,0.35);
+  padding-bottom: 10px;
+  overflow: visible;
+}
+.em-hero h1::before { content: none !important; }
+.em-hero .hero-subtitle { font-size: 1.05em; opacity: 0.93; margin-bottom: 0; }
+.em-hero .hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.32);
+  border-radius: 18px;
+  padding: 2px 12px;
+  font-size: 0.78em;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ------ Stat cards ------ */
+.em-stats {
+  display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 28px;
+}
+.em-stat-card {
+  flex: 1 1 130px;
+  background: #ffffff;
+  border: 1px solid #C8DAF0;
+  border-top: 4px solid #0070C0;
+  border-radius: 4px;
+  padding: 16px 14px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,51,102,0.08);
+}
+.em-stat-card .stat-number {
+  font-size: 2em; font-weight: 700; color: #003366; display: block;
+}
+.em-stat-card .stat-label { font-size: 0.8em; color: #555; margin-top: 3px; }
+
+/* ------ Content card grid ------ */
+.em-card-grid { display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 28px; }
+.em-card {
+  flex: 1 1 250px;
+  background: #ffffff;
+  border: 1px solid #C8DAF0;
+  border-radius: 5px;
+  padding: 20px 18px;
+  box-shadow: 0 1px 3px rgba(0,51,102,0.07);
+  transition: box-shadow 0.2s;
+}
+.em-card:hover { box-shadow: 0 4px 12px rgba(0,51,102,0.13); }
+.em-card h3 {
+  color: #003366;
+  margin-top: 0;
+  font-size: 1.0em;
+  font-weight: 600;
+  border-bottom: 2px solid #0070C0;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  overflow: visible;
+}
+.em-card h3::before { content: none !important; }
+
+/* ------ Info boxes ------ */
+.em-info-box {
+  background: #EBF5FF;
+  border-left: 5px solid #0070C0;
+  border-radius: 0 4px 4px 0;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+}
+.em-info-box.green { background: #EAFAF1; border-left-color: #006B3F; }
+.em-info-box.red   { background: #FDF3F3; border-left-color: #BB0000; }
+.em-info-box strong { display: block; margin-bottom: 4px; color: #003366; }
+
+/* ------ Responsive ------ */
+@media (max-width: 600px) {
+  .em-hero { padding: 22px 14px; }
+  .em-hero h1 { font-size: 1.4em; }
+  .em-stats, .em-card-grid { gap: 10px; }
+}
+</style>

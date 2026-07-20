@@ -1,6 +1,6 @@
 Profile: KenyaAmbulanceEncounter
 Parent: Encounter
-Id: ke-emmergency-ambulance-encounter
+Id: ke-emergency-ambulance-encounter
 Title: "Kenya Ambulance Encounter"
 Description: "Encounter profile for ambulance services in Kenya."
 
