@@ -9340,3 +9340,198 @@ Description: "LOINC codes commonly used for vital signs observations."
 * #39156-5 "Body mass index"
 * #9843-4 "Head circumference"
 * #85353-1 "Vital signs panel"
+
+
+// ============================================================================
+// EMS Clinical Profile Terminology (Procedure, DiagnosticReport,
+// AllergyIntolerance, Condition, PhysicalExam, Vitals,
+// MedicationAdministration, ResponderUnit)
+// ============================================================================
+
+CodeSystem: EMOwnershipTypeCS
+Id: em-ownership-type
+Title: "Emergency Responder Unit Ownership Type"
+Description: """
+Ownership category of an organization operating an emergency responder unit.
+"""
+
+// * ^url =
+//     "http://hie.go.ke/fhir/CodeSystem/em-ownership-type"
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #government "Government"
+    "The responder unit is owned or operated by a government entity."
+
+* #private "Private"
+    "The responder unit is owned or operated by a private for-profit entity."
+
+* #ngo "Non-governmental organization"
+    "The responder unit is owned or operated by a non-governmental organization."
+
+* #other "Other"
+    "Another ownership category not otherwise listed."
+
+
+CodeSystem: EMUnitResponseStatusCS
+Id: em-unit-response-status
+Title: "Emergency Responder Unit Response Status"
+Description: """
+Current operational response state of an emergency responder unit during an
+incident.
+"""
+
+// * ^url =
+//     "http://hie.go.ke/fhir/CodeSystem/em-response-status"
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #dispatched "Dispatched"
+    "The unit has been assigned to the incident but has not yet begun moving."
+
+* #en-route "En route"
+    "The unit is travelling to the incident scene."
+
+* #on-scene "On scene"
+    "The unit has arrived at the incident scene."
+
+* #transporting "Transporting"
+    "The unit is transporting the patient to a receiving facility."
+
+* #at-facility "At facility"
+    "The unit has arrived at the receiving facility."
+
+* #stood-down "Stood down"
+    "The unit has been relieved or stood down from the incident."
+
+
+CodeSystem: EMDiagnosisCategoryCS
+Id: em-diagnosis-category
+Title: "Emergency Diagnosis Staging Category"
+Description: """
+Diagnostic stage represented by an emergency Condition instance, from initial
+chief complaint through discharge diagnosis.
+"""
+
+// * ^url =
+//     "http://hie.go.ke/fhir/CodeSystem/em-diagnosis-category"
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #chief-complaint "Chief complaint"
+    "The caller- or patient-reported reason for the emergency, captured before clinical assessment."
+
+* #working-diagnosis "Working diagnosis"
+    "A single leading diagnosis suspected by the emergency team during assessment or treatment."
+
+* #differential-diagnosis "Differential diagnosis"
+    "One of several diagnoses under active consideration during assessment or treatment."
+
+* #discharge-diagnosis "Discharge diagnosis"
+    "The diagnosis assigned when the emergency encounter or episode is closed."
+
+
+CodeSystem: EMSecondarySurveyRegionCS
+Id: em-secondary-survey-region
+Title: "Emergency Secondary Survey Region"
+Description: """
+Identifies a secondary-survey physical examination as pertaining to a specific
+body region.
+"""
+
+// * ^url =
+//     "http://hie.go.ke/fhir/CodeSystem/em-secondary-survey-region"
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #secondary-survey-head "Secondary survey - head"
+* #secondary-survey-neck "Secondary survey - neck"
+* #secondary-survey-chest "Secondary survey - chest"
+* #secondary-survey-back-and-spine "Secondary survey - back and spine"
+* #secondary-survey-abdomen "Secondary survey - abdomen"
+* #secondary-survey-pelvis "Secondary survey - pelvis"
+* #secondary-survey-upper-extremities "Secondary survey - upper extremities"
+* #secondary-survey-lower-extremities "Secondary survey - lower extremities"
+
+
+CodeSystem: EMBodyRegionCS
+Id: em-body-region
+Title: "Emergency Body Region"
+Description: """
+Body regions examined during an emergency secondary survey.
+"""
+
+// * ^url =
+//     "http://hie.go.ke/fhir/CodeSystem/em-body-region"
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #head "Head"
+* #neck "Neck"
+* #chest "Chest"
+* #back-and-spine "Back and spine"
+* #abdomen "Abdomen"
+* #pelvis "Pelvis"
+* #upper-extremities "Upper extremities"
+* #lower-extremities "Lower extremities"
+
+
+CodeSystem: EMVitalQualitativeStateCS
+Id: em-vital-qualitative-state
+Title: "Emergency Vital Sign Qualitative State"
+Description: """
+Qualitative descriptor of a vital-sign reading that is independent of, and
+supplements, its numeric value.
+"""
+
+// * ^url =
+//     "http://hie.go.ke/fhir/CodeSystem/em-vital-qualitative-state"
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #weak "Weak"
+* #strong "Strong"
+* #bounding "Bounding"
+* #thready "Thready"
+* #regular "Regular"
+* #irregular "Irregular"
+* #labored "Labored"
+* #shallow "Shallow"
+* #normal "Normal"
+
+CodeSystem: EMAgeGroupCS
+Id: em-age-group
+Title: "Emergency Age Group"
+Description: """
+Age-group bucket used to select the applicable clinical reference range for an
+emergency observation.
+"""
+
+// * ^url =
+//     "http://hie.go.ke/fhir/CodeSystem/em-age-group"
+
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
+* #adult "Adult"
+* #paediatric "Paediatric"
