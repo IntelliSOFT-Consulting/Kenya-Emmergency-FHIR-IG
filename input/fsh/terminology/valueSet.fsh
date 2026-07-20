@@ -354,7 +354,84 @@ Description: "Clinical manifestations and symptoms."
 ValueSet: VitalSignsVS
 Id: vital-signs-vs
 Title: "Vital Signs ValueSet"
-Description: "List of Vital Signs LOINC codes" 
+Description: "List of Vital Signs LOINC codes"
 * ^status = #active
 * ^experimental = false
-* include codes from system $vital-signs-cs  
+* include codes from system $vital-signs-cs
+
+
+// ============================================================================
+// EMS Clinical Profile ValueSets
+// ============================================================================
+
+ValueSet: EMOwnershipTypeVS
+Id: em-ownership-type
+Title: "Emergency Responder Unit Ownership Type Value Set"
+Description: "Permitted ownership categories for an emergency responder unit."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMOwnershipTypeCS
+
+ValueSet: EMUnitResponseStatusVS
+Id: em-unit-response-status
+Title: "Emergency Responder Unit Response Status Value Set"
+Description: "Permitted real-time response states for an emergency responder unit."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMUnitResponseStatusCS
+
+ValueSet: EMDiagnosisCategoryVS
+Id: em-diagnosis-category
+Title: "Emergency Diagnosis Staging Category Value Set"
+Description: "Permitted diagnostic stages for an emergency Condition instance."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMDiagnosisCategoryCS
+
+ValueSet: EMSecondarySurveyRegionVS
+Id: em-secondary-survey-region
+Title: "Emergency Secondary Survey Region Value Set"
+Description: "Permitted secondary-survey region examination codes."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMSecondarySurveyRegionCS
+
+ValueSet: EMBodyRegionVS
+Id: em-body-region
+Title: "Emergency Body Region Value Set"
+Description: "Permitted body regions examined during an emergency secondary survey."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMBodyRegionCS
+
+ValueSet: EMVitalQualitativeStateVS
+Id: em-vital-qualitative-state
+Title: "Emergency Vital Sign Qualitative State Value Set"
+Description: "Permitted qualitative descriptors for a vital-sign reading."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMVitalQualitativeStateCS
+
+ValueSet: EMAgeGroupVS
+Id: em-age-group
+Title: "Emergency Age Group Value Set"
+Description: "Permitted age-group buckets used to select a reference range."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMAgeGroupCS
+
+ValueSet: ProcedureCodeVS
+Id: procedure-code-vs
+Title: "Procedure Code Value Set"
+Description: "Local procedure code list, supplementing SNOMED CT procedure codes."
+* ^status = #active
+* ^experimental = false
+* include codes from system ProcedureCodeCS
+
+ValueSet: ActiveComponentsVS
+Id: active-components-vs
+Title: "Active Components Value Set"
+Description: "Drug/allergen active-component codes used for allergen and medication coding."
+* ^status = #active
+* ^experimental = false
+* include codes from system ActiveComponentsCS

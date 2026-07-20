@@ -292,10 +292,22 @@ emergency-response units participating in an emergency incident.
 // --------------------------------------------------------------------------
 
 * extension contains
-    EMResponderCrewMember named responderCrew 0..* MS
+    EMResponderCrewMember named responderCrew 0..* MS and
+    EMOwnershipType named ownershipType 0..1 MS and
+    EMTelematicsDeviceId named telematicsDeviceId 0..1 and
+    EMRelieved named relieved 0..1 MS
 
 * extension[responderCrew] ^short =
     "Emergency-response personnel assigned to the unit"
+
+* extension[ownershipType] ^short =
+    "Ownership category of the organization operating the unit, e.g. government, private, NGO"
+
+* extension[telematicsDeviceId] ^short =
+    "Onboard telematics/tracking device identifier, if present"
+
+* extension[relieved] ^short =
+    "Whether this unit has been stood down/replaced by another during the incident"
 
 
 // --------------------------------------------------------------------------
@@ -373,13 +385,64 @@ emergency-response units participating in an emergency incident.
 * owner ^short =
     "Organization responsible for operating the responder unit"
 
+* contact 0..1 MS
+* contact ^short =
+    "Phone number for the unit"
+
 * location 0..1 MS
-* location only Reference(Location)
+* location only Reference(EMResponderUnitLocation)
 * location ^short =
-    "Current station, dispatch location, or last known unit location"
+    "Current real-time position, dispatch location, or last known unit location"
 
 * patient 0..0
 * patient ^short =
     "Not used because the responder unit is not patient-specific"
 
 * note 0..* MS
+
+
+
+// ============================================================================
+// Responder Unit Real-Time Position
+// ============================================================================
+
+Profile: EMResponderUnitLocation
+Parent: Location
+Id: em-responder-unit-location
+Title: "Location - Emergency Responder Unit Position"
+Description: """
+Represents the real-time geographic position and response status of an
+emergency responder unit, referenced from EMResponderUnit.location.
+"""
+
+* ^status = #active
+* ^experimental = false
+* ^abstract = false
+* ^publisher = "Kenya Health Information Exchange"
+
+* extension contains
+    EMLastLocationUpdatedAt named lastLocationUpdatedAt 0..1 MS and
+    EMUnitResponseStatus named responseStatus 0..1 MS
+
+* extension[lastLocationUpdatedAt] ^short =
+    "When the position was last refreshed"
+
+* extension[responseStatus] ^short =
+    "The unit's current response state, e.g. dispatched, en-route, on-scene"
+
+* status 1..1 MS
+* status from $LocationStatus (required)
+
+* mode 1..1 MS
+* mode = #instance
+
+* position 0..1 MS
+
+* position.longitude 1..1 MS
+* position.longitude ^short = "Longitude of the unit's current position"
+
+* position.latitude 1..1 MS
+* position.latitude ^short = "Latitude of the unit's current position"
+
+* managingOrganization 0..1 MS
+* managingOrganization only Reference(Organization)

@@ -78,3 +78,33 @@ Alias: $VehicleRegistrationIdentifierSystem =
 
 Alias: $FacilityIdentifierSystem =
   http://hie.go.ke/fhir/identifier/facility-id
+
+Alias: $EventStatus =
+  http://hl7.org/fhir/ValueSet/event-status
+
+Alias: $AllergyIntoleranceCategory =
+  http://hl7.org/fhir/ValueSet/allergy-intolerance-category
+
+Alias: $AllergyIntoleranceCriticality =
+  http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality
+
+Alias: $AllergyIntoleranceClinicalVS =
+  http://hl7.org/fhir/ValueSet/allergyintolerance-clinical
+
+Alias: $AllergyIntoleranceVerificationVS =
+  http://hl7.org/fhir/ValueSet/allergyintolerance-verification
+
+Alias: $ReactionEventSeverity =
+  http://hl7.org/fhir/ValueSet/reaction-event-severity
+
+Alias: $ConditionClinicalStatusVS =
+  http://hl7.org/fhir/ValueSet/condition-clinical
+
+Alias: $ConditionVerificationStatusVS =
+  http://hl7.org/fhir/ValueSet/condition-ver-status
+
+Alias: $DiagnosticReportStatus =
+  http://hl7.org/fhir/ValueSet/diagnostic-report-status
+
+Alias: $MedicationAdminStatus =
+  http://hl7.org/fhir/ValueSet/medication-admin-status
