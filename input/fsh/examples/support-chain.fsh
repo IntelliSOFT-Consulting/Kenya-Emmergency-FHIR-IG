@@ -9,24 +9,24 @@
 // references by id.
 // ============================================================================
 
-Instance: pat-0712345678
-InstanceOf: KenyaEmergencyPatient
-Usage: #example
-Title: "Patient - Identified Emergency Patient"
-Description: "An identified adult patient receiving emergency care, referenced across the supporting example chain."
+// Instance: pat-0712345678
+// InstanceOf: KenyaEmergencyPatient
+// Usage: #example
+// Title: "Patient - Identified Emergency Patient"
+// Description: "An identified adult patient receiving emergency care, referenced across the supporting example chain."
 
-* active = true
+// * active = true
 
-* extension[unidentifiedPatient].valueBoolean = false
-* extension[patientIdentityVerified].valueBoolean = true
-* extension[isAdult].valueBoolean = true
+// * extension[unidentifiedPatient].valueBoolean = false
+// * extension[patientIdentityVerified].valueBoolean = true
+// * extension[isAdult].valueBoolean = true
 
-* identifier[nationalId].system = $OfficialIdentifierSystem
-* identifier[nationalId].value = "33445566"
+// * identifier[nationalId].system = $OfficialIdentifierSystem
+// * identifier[nationalId].value = "33445566"
 
-* name.text = "Amina Atieno"
-* gender = #female
-* birthDate = "1992-05-16"
+// * name.text = "Amina Atieno"
+// * gender = #female
+// * birthDate = "1992-05-16"
 
 
 Instance: org-nairobi-ems-dispatch
@@ -164,30 +164,30 @@ Description: "Example real-time position of the ambulance responding to the inci
 * managingOrganization = Reference(Organization/org-nairobi-ems-dispatch)
 
 
-Instance: em-responder-unit-example
-InstanceOf: EMResponderUnit
-Usage: #example
-Title: "Device - Ambulance Unit 12"
-Description: "Example ambulance responder unit dispatched to the incident above."
+// Instance: em-responder-unit-example
+// InstanceOf: EMResponderUnit
+// Usage: #example
+// Title: "Device - Ambulance Unit 12"
+// Description: "Example ambulance responder unit dispatched to the incident above."
 
-* extension[responderCrew][0].extension[member].valueReference = Reference(Practitioner/em-practitioner-example)
-* extension[responderCrew][0].extension[role].valueCodeableConcept = EMCrewRoleCS#paramedic "Paramedic"
+// * extension[responderCrew][0].extension[member].valueReference = Reference(Practitioner/em-practitioner-example)
+// * extension[responderCrew][0].extension[role].valueCodeableConcept = EMCrewRoleCS#paramedic "Paramedic"
 
-* extension[ownershipType].valueCodeableConcept = EMOwnershipTypeCS#government "Government"
-* extension[relieved].valueBoolean = false
+// * extension[ownershipType].valueCodeableConcept = EMOwnershipTypeCS#government "Government"
+// * extension[relieved].valueBoolean = false
 
-* identifier[responderUnitId].value = "AMB-012"
-* identifier[vehicleRegistration].value = "KDA 001A"
+// * identifier[responderUnitId].value = "AMB-012"
+// * identifier[vehicleRegistration].value = "KDA 001A"
 
-* status = #active
-* type = EMResponderUnitTypeCS#advanced-life-support "Advanced life-support ambulance"
+// * status = #active
+// * type = EMResponderUnitTypeCS#advanced-life-support "Advanced life-support ambulance"
 
-* deviceName.name = "Ambulance Unit 12"
-* deviceName.type = #user-friendly-name
+// * deviceName.name = "Ambulance Unit 12"
+// * deviceName.type = #user-friendly-name
 
-* owner = Reference(Organization/org-nairobi-ems-dispatch)
+// * owner = Reference(Organization/org-nairobi-ems-dispatch)
 
-* contact.system = #phone
-* contact.value = "+254700200300"
+// * contact.system = #phone
+// * contact.value = "+254700200300"
 
-* location = Reference(Location/em-responder-unit-location-example)
+// * location = Reference(Location/em-responder-unit-location-example)

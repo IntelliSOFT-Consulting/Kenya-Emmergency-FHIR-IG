@@ -130,7 +130,7 @@ record created for emergency tracking.
 """
 
 * episodeOfCare 1..1 MS
-* episodeOfCare only Reference(KenyaAmbulanceEpisodeOfCare)
+* episodeOfCare only Reference(EpisodeOfCare)
 * episodeOfCare ^short = "Emergency episode containing this incident"
 * episodeOfCare ^definition = """
 FHIR-native structural link to the emergency EpisodeOfCare. The shared incident
@@ -266,139 +266,139 @@ the corresponding healthcare Organization.
 
 
 
-Profile: EMResponderUnit
-Parent: Device
-Id: em-responder-unit
-Title: "Device - Emergency Responder Unit"
-Description: """
-Represents an ambulance or another mobile emergency-response unit assigned to
-an emergency incident.
+// Profile: EMResponderUnit
+// Parent: Device
+// Id: em-responder-unit
+// Title: "Device - Emergency Responder Unit"
+// Description: """
+// Represents an ambulance or another mobile emergency-response unit assigned to
+// an emergency incident.
 
-The Device represents the operational vehicle or response unit. Crew members
-assigned to the unit are represented using the responderCrew extension.
-"""
+// The Device represents the operational vehicle or response unit. Crew members
+// assigned to the unit are represented using the responderCrew extension.
+// """
 
-* ^status = #active
-* ^experimental = false
-* ^abstract = false
-* ^publisher = "Kenya Health Information Exchange"
-* ^purpose = """
-To provide a consistent representation of ambulances and other mobile
-emergency-response units participating in an emergency incident.
-"""
+// * ^status = #active
+// * ^experimental = false
+// * ^abstract = false
+// * ^publisher = "Kenya Health Information Exchange"
+// * ^purpose = """
+// To provide a consistent representation of ambulances and other mobile
+// emergency-response units participating in an emergency incident.
+// """
 
-// --------------------------------------------------------------------------
-// Extensions
-// --------------------------------------------------------------------------
+// // --------------------------------------------------------------------------
+// // Extensions
+// // --------------------------------------------------------------------------
 
-* extension contains
-    EMResponderCrewMember named responderCrew 0..* MS and
-    EMOwnershipType named ownershipType 0..1 MS and
-    EMTelematicsDeviceId named telematicsDeviceId 0..1 and
-    EMRelieved named relieved 0..1 MS
+// * extension contains
+//     EMResponderCrewMember named responderCrew 0..* MS and
+//     EMOwnershipType named ownershipType 0..1 MS and
+//     EMTelematicsDeviceId named telematicsDeviceId 0..1 and
+//     EMRelieved named relieved 0..1 MS
 
-* extension[responderCrew] ^short =
-    "Emergency-response personnel assigned to the unit"
+// * extension[responderCrew] ^short =
+//     "Emergency-response personnel assigned to the unit"
 
-* extension[ownershipType] ^short =
-    "Ownership category of the organization operating the unit, e.g. government, private, NGO"
+// * extension[ownershipType] ^short =
+//     "Ownership category of the organization operating the unit, e.g. government, private, NGO"
 
-* extension[telematicsDeviceId] ^short =
-    "Onboard telematics/tracking device identifier, if present"
+// * extension[telematicsDeviceId] ^short =
+//     "Onboard telematics/tracking device identifier, if present"
 
-* extension[relieved] ^short =
-    "Whether this unit has been stood down/replaced by another during the incident"
-
-
-// --------------------------------------------------------------------------
-// Identifiers
-// --------------------------------------------------------------------------
-
-* identifier 1..* MS
-
-* identifier ^slicing.discriminator[0].type = #value
-* identifier ^slicing.discriminator[0].path = "system"
-* identifier ^slicing.rules = #open
-* identifier ^slicing.ordered = false
-
-* identifier contains
-    responderUnitId 1..1 MS and
-    vehicleRegistration 0..1 MS
-
-* identifier[responderUnitId].system 1..1 MS
-* identifier[responderUnitId].system =
-    $ResponderUnitIdentifierSystem (exactly)
-
-* identifier[responderUnitId].value 1..1 MS
-* identifier[responderUnitId].use = #official
-* identifier[responderUnitId] ^short =
-    "Operational identifier assigned to the response unit"
-
-* identifier[vehicleRegistration].system 1..1 MS
-* identifier[vehicleRegistration].system =
-    $VehicleRegistrationIdentifierSystem (exactly)
-
-* identifier[vehicleRegistration].value 1..1 MS
-* identifier[vehicleRegistration].use = #official
-* identifier[vehicleRegistration] ^short =
-    "Vehicle registration or number plate"
+// * extension[relieved] ^short =
+//     "Whether this unit has been stood down/replaced by another during the incident"
 
 
-// --------------------------------------------------------------------------
-// Device status and type
-// --------------------------------------------------------------------------
+// // --------------------------------------------------------------------------
+// // Identifiers
+// // --------------------------------------------------------------------------
 
-* status 1..1 MS
-* status from $DeviceStatus (required)
+// * identifier 1..* MS
 
-* status ^short = "Operational status of the responder unit"
+// * identifier ^slicing.discriminator[0].type = #value
+// * identifier ^slicing.discriminator[0].path = "system"
+// * identifier ^slicing.rules = #open
+// * identifier ^slicing.ordered = false
 
-* type 1..1 MS
-* type from EMResponderUnitTypeVS (required)
-* type ^short = "Type of emergency-response vehicle or unit"
+// * identifier contains
+//     responderUnitId 1..1 MS and
+//     vehicleRegistration 0..1 MS
+
+// * identifier[responderUnitId].system 1..1 MS
+// * identifier[responderUnitId].system =
+//     $ResponderUnitIdentifierSystem (exactly)
+
+// * identifier[responderUnitId].value 1..1 MS
+// * identifier[responderUnitId].use = #official
+// * identifier[responderUnitId] ^short =
+//     "Operational identifier assigned to the response unit"
+
+// * identifier[vehicleRegistration].system 1..1 MS
+// * identifier[vehicleRegistration].system =
+//     $VehicleRegistrationIdentifierSystem (exactly)
+
+// * identifier[vehicleRegistration].value 1..1 MS
+// * identifier[vehicleRegistration].use = #official
+// * identifier[vehicleRegistration] ^short =
+//     "Vehicle registration or number plate"
 
 
-// --------------------------------------------------------------------------
-// Unit details
-// --------------------------------------------------------------------------
+// // --------------------------------------------------------------------------
+// // Device status and type
+// // --------------------------------------------------------------------------
 
-* deviceName 1..* MS
+// * status 1..1 MS
+// * status from $DeviceStatus (required)
 
-* deviceName.name 1..1 MS
-* deviceName.type 1..1 MS
+// * status ^short = "Operational status of the responder unit"
 
-* deviceName ^short =
-    "Operational name, call sign, or fleet name of the responder unit"
+// * type 1..1 MS
+// * type from EMResponderUnitTypeVS (required)
+// * type ^short = "Type of emergency-response vehicle or unit"
 
-* manufacturer 0..1 MS
-* manufacturer ^short = "Vehicle manufacturer"
 
-* modelNumber 0..1 MS
-* modelNumber ^short = "Vehicle model"
+// // --------------------------------------------------------------------------
+// // Unit details
+// // --------------------------------------------------------------------------
 
-* serialNumber 0..1 MS
-* serialNumber ^short =
-    "Vehicle chassis, VIN, or other serial identifier"
+// * deviceName 1..* MS
 
-* owner 1..1 MS
-* owner only Reference(Organization)
-* owner ^short =
-    "Organization responsible for operating the responder unit"
+// * deviceName.name 1..1 MS
+// * deviceName.type 1..1 MS
 
-* contact 0..1 MS
-* contact ^short =
-    "Phone number for the unit"
+// * deviceName ^short =
+//     "Operational name, call sign, or fleet name of the responder unit"
 
-* location 0..1 MS
-* location only Reference(EMResponderUnitLocation)
-* location ^short =
-    "Current real-time position, dispatch location, or last known unit location"
+// * manufacturer 0..1 MS
+// * manufacturer ^short = "Vehicle manufacturer"
 
-* patient 0..0
-* patient ^short =
-    "Not used because the responder unit is not patient-specific"
+// * modelNumber 0..1 MS
+// * modelNumber ^short = "Vehicle model"
 
-* note 0..* MS
+// * serialNumber 0..1 MS
+// * serialNumber ^short =
+//     "Vehicle chassis, VIN, or other serial identifier"
+
+// * owner 1..1 MS
+// * owner only Reference(Organization)
+// * owner ^short =
+//     "Organization responsible for operating the responder unit"
+
+// * contact 0..1 MS
+// * contact ^short =
+//     "Phone number for the unit"
+
+// * location 0..1 MS
+// * location only Reference(EMResponderUnitLocation)
+// * location ^short =
+//     "Current real-time position, dispatch location, or last known unit location"
+
+// * patient 0..0
+// * patient ^short =
+//     "Not used because the responder unit is not patient-specific"
+
+// * note 0..* MS
 
 
 

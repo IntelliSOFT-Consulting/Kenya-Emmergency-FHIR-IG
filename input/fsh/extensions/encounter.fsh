@@ -85,7 +85,7 @@ incident.
 * ^context[0].expression = "Encounter"
 
 * value[x] 1..1 MS
-* value[x] only Reference(EMResponderUnit)
+* value[x] only Reference(Device)
 
 
 

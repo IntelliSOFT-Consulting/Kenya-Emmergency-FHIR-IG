@@ -32,10 +32,10 @@ Encounter and references it through Encounter.partOf.
     "Clinical acuity assigned after assessment by the emergency team"
 
 * subject 1..1 MS
-* subject only Reference(KenyaEmergencyPatient)
+* subject only Reference(Patient)
 
 * episodeOfCare 1..1 MS
-* episodeOfCare only Reference(KenyaAmbulanceEpisodeOfCare)
+* episodeOfCare only Reference(EpisodeOfCare)
 
 * partOf 1..1 MS
 * partOf only Reference(EMIncidentEncounter)
