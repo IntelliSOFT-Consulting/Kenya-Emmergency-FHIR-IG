@@ -42,7 +42,7 @@ true only when no finding is present, false whenever a finding is coded.
 Severity: #error
 Expression: """
 (value.exists() or component.exists()) implies
-extension.where(url = 'https://nshr-uat.sha.go.ke/fhir/StructureDefinition/em-no-findings-on-exam').value.ofType(boolean) = false
+extension.where(url = 'https://fhir.dha.go.ke/ig/emergency/StructureDefinition/em-no-findings-on-exam').value.ofType(boolean) = false
 """
 
 Invariant: em-exam-2
@@ -52,5 +52,27 @@ When no finding is coded, the noFindingsOnExam extension must be true.
 Severity: #error
 Expression: """
 (value.empty() and component.empty()) implies
-extension.where(url = 'https://nshr-uat.sha.go.ke/fhir/StructureDefinition/em-no-findings-on-exam').value.ofType(boolean) = true
+extension.where(url = 'https://fhir.dha.go.ke/ig/emergency/StructureDefinition/em-no-findings-on-exam').value.ofType(boolean) = true
+"""
+
+
+Invariant: em-highrisk-1
+Description: """
+The top-level "any high-risk sign present" value must agree with whether any
+individual high-risk-sign component is true.
+"""
+Severity: #error
+Expression: """
+(component.value.ofType(boolean).where($this = true).exists()) = (value.ofType(boolean) = true)
+"""
+
+
+Invariant: em-pocus-1
+Description: """
+A POCUS Observation must carry either a top-level overall read or at least
+one structured component finding.
+"""
+Severity: #error
+Expression: """
+value.exists() or component.exists()
 """

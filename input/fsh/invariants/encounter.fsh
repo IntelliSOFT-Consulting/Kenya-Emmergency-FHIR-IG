@@ -66,6 +66,16 @@ Expression: """
 period.end.empty() or period.start.empty() or period.end >= period.start
 """
 
+Invariant: em-ed-1
+Description: """
+The emergency department Encounter period end must not occur before its
+period start.
+"""
+Severity: #error
+Expression: """
+period.end.empty() or period.start.empty() or period.end >= period.start
+"""
+
 Invariant: em-scene-1
 Description: """
 The scene Location must contain at least a name, alias, description, address,

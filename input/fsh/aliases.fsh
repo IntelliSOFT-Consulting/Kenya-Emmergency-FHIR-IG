@@ -38,6 +38,7 @@ Alias: $ParticipationType = http://terminology.hl7.org/CodeSystem/v3-Participati
 Alias: $EncounterStatus = http://hl7.org/fhir/ValueSet/encounter-status
 Alias: $DispatchIdentifierSystem = http://hie.go.ke/fhir/identifier/dispatch-id
 Alias: $IncidentIdentifierSystem = http://hie.go.ke/fhir/identifier/incident-id
+Alias: $HospitalRegistrationSystem = http://hie.go.ke/fhir/identifier/hospital-registration-number
 
 Alias: $SCT = http://snomed.info/sct
 Alias: $LOINC = http://loinc.org
