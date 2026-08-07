@@ -5,7 +5,7 @@ temporary tracking number.
 """
 Expression: """
 identifier.where(
-  system = 'http://hie.go.ke/fhir/identifier/national-id'
+  system = 'http://hie.go.ke/fhir/identifier/patient-official-id'
   or
   system = 'http://hie.go.ke/fhir/identifier/patient-temp-tracking'
 ).exists()
@@ -18,8 +18,8 @@ An unidentified patient must have an emergency temporary tracking number.
 """
 Expression: """
 extension.where(
-  url = 'http://hie.go.ke/fhir/StructureDefinition/em-unidentified-patient'
-).valueBoolean = true implies
+  url = 'https://fhir.dha.go.ke/ig/emergency/StructureDefinition/em-unidentified-patient'
+).value.ofType(boolean) = true implies
 identifier.where(
   system = 'http://hie.go.ke/fhir/identifier/patient-temp-tracking'
 ).exists()
@@ -33,14 +33,14 @@ unidentified and must have an official identifier.
 """
 Expression: """
 extension.where(
-  url = 'http://hie.go.ke/fhir/StructureDefinition/em-patient-identity-verified'
-).valueBoolean = true implies (
+  url = 'https://fhir.dha.go.ke/ig/emergency/StructureDefinition/em-patient-identity-verified'
+).value.ofType(boolean) = true implies (
   extension.where(
-    url = 'http://hie.go.ke/fhir/StructureDefinition/em-unidentified-patient'
-  ).valueBoolean = false
+    url = 'https://fhir.dha.go.ke/ig/emergency/StructureDefinition/em-unidentified-patient'
+  ).value.ofType(boolean) = false
   and
   identifier.where(
-    system = 'http://hie.go.ke/fhir/identifier/national-id'
+    system = 'http://hie.go.ke/fhir/identifier/patient-official-id'
   ).exists()
 )
 """
@@ -53,7 +53,7 @@ The patient should not have both an exact birth date and an approximate age.
 Expression: """
 birthDate.exists() implies
 extension.where(
-  url = 'http://hl7.org/fhir/StructureDefinition/patient-age'
+  url = 'https://fhir.dha.go.ke/ig/emergency/StructureDefinition/em-approximate-age'
 ).empty()
 """
 Severity: #error

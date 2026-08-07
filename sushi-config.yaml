@@ -8,10 +8,10 @@
 # │  Publisher: Digital Health Agency (DHA), Republic of Kenya                              │
 # ╰──────────────────────────────────────────────────────────────────────────────────────────╯
 
-id: fhir.kenyaEmergencyIG
-canonical: https://nshr-uat.sha.go.ke/fhir
-name: KenyaEmergencyFHIRIG
-title: "Kenya Emergency FHIR Implementation Guide"
+id: ke.fhir.emergency
+canonical: https://fhir.dha.go.ke/ig/emergency
+name: KenyaEmergency
+title: "Kenya Emergency Care Implementation Guide"
 description: >-
   FHIR R4 Implementation Guide for Kenya Emergency Medical Services (EMS), developed by the
   Digital Health Agency (DHA) under the Ministry of Health, Republic of Kenya. This guide

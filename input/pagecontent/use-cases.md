@@ -18,7 +18,7 @@ Implementation Guide. Each use case maps to one or more FHIR profiles defined in
    the shared incident identifier used across every downstream resource.
 2. An **EMIncidentEncounter** is created as the root encounter, capturing the caller, dispatch
    priority, incident type, scene location, and any supporting agencies (fire, police).
-3. If the patient's identity is not yet known, a temporary **KenyaEmergencyPatient** is created
+3. If the patient's identity is not yet known, a temporary **EMPatient** is created
    with a system-generated tracking number rather than blocking on identity resolution.
 4. One or more **EMResponderUnit** instances (ambulances or other response vehicles) are
    assigned to the incident, each with its own real-time position via **EMResponderUnitLocation**.
@@ -26,7 +26,7 @@ Implementation Guide. Each use case maps to one or more FHIR profiles defined in
 **Key Profiles Used:**
 [EMEpisodeOfCare](StructureDefinition-em-episode-of-care.html) ·
 [EMIncidentEncounter](StructureDefinition-em-incident-encounter.html) ·
-[KenyaEmergencyPatient](StructureDefinition-kenya-emergency-patient.html) ·
+[EMPatient](StructureDefinition-em-patient.html) ·
 [EMResponderUnit](StructureDefinition-em-responder-unit.html) ·
 [EMResponderUnitLocation](StructureDefinition-em-responder-unit-location.html)
 

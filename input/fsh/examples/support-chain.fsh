@@ -9,24 +9,24 @@
 // references by id.
 // ============================================================================
 
-// Instance: pat-0712345678
-// InstanceOf: KenyaEmergencyPatient
-// Usage: #example
-// Title: "Patient - Identified Emergency Patient"
-// Description: "An identified adult patient receiving emergency care, referenced across the supporting example chain."
+Instance: pat-0712345678
+InstanceOf: EMPatient
+Usage: #example
+Title: "Patient - Identified Emergency Patient"
+Description: "An identified adult patient receiving emergency care, referenced across the supporting example chain."
 
-// * active = true
+* active = true
 
-// * extension[unidentifiedPatient].valueBoolean = false
-// * extension[patientIdentityVerified].valueBoolean = true
-// * extension[isAdult].valueBoolean = true
+* extension[unidentifiedPatient].valueBoolean = false
+* extension[patientIdentityVerified].valueBoolean = true
+* extension[isAdult].valueBoolean = true
 
-// * identifier[nationalId].system = $OfficialIdentifierSystem
-// * identifier[nationalId].value = "33445566"
+* identifier[nationalId].system = $OfficialIdentifierSystem
+* identifier[nationalId].value = "33445566"
 
-// * name.text = "Amina Atieno"
-// * gender = #female
-// * birthDate = "1992-05-16"
+* name.text = "Amina Atieno"
+* gender = #female
+* birthDate = "1992-05-16"
 
 
 Instance: org-nairobi-ems-dispatch

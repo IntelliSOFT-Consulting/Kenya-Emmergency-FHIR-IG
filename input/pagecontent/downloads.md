@@ -13,14 +13,14 @@ server.
 
 | Resource | Format | Description |
 |---|---|---|
-| `fhir.kenyaEmergencyIG-0.1.0.tgz` | NPM Package (`.tgz`) | Full IG FHIR NPM package |
+| `ke.fhir.emergency-0.1.0.tgz` | NPM Package (`.tgz`) | Full IG FHIR NPM package |
 | `package.json` | JSON | Package manifest |
 
 <div class="em-info-box">
-  <strong>Package ID:</strong> <code>fhir.kenyaEmergencyIG</code><br/>
+  <strong>Package ID:</strong> <code>ke.fhir.emergency</code><br/>
   <strong>Version:</strong> <code>0.1.0</code><br/>
   <strong>FHIR Version:</strong> <code>4.0.1</code><br/>
-  <strong>Canonical:</strong> <code>https://nshr-uat.sha.go.ke/fhir</code>
+  <strong>Canonical:</strong> <code>https://fhir.dha.go.ke/ig/emergency</code>
 </div>
 
 ---
@@ -31,7 +31,7 @@ To validate FHIR resources against this IG, use the HL7 FHIR Validator with this
 
 ```
 java -jar validator_cli.jar <resource.json> \
-  -ig fhir.kenyaEmergencyIG#0.1.0 \
+  -ig ke.fhir.emergency#0.1.0 \
   -version 4.0.1
 ```
 

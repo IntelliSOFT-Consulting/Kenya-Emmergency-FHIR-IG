@@ -435,3 +435,152 @@ Description: "Drug/allergen active-component codes used for allergen and medicat
 * ^status = #active
 * ^experimental = false
 * include codes from system ActiveComponentsCS
+
+
+// ============================================================================
+// Emergency Department Patient Record ValueSets
+// ============================================================================
+
+ValueSet: EMPaymentMethodVS
+Id: em-payment-method
+Title: "Emergency Department Payment Method Value Set"
+Description: "Permitted payment methods recorded at ED registration."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMPaymentMethodCS
+
+ValueSet: EMArrivalModeVS
+Id: em-arrival-mode
+Title: "Emergency Department Arrival Mode Value Set"
+Description: "Permitted modes of arrival at the emergency department."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMArrivalModeCS
+
+ValueSet: EMMobilityStatusVS
+Id: em-mobility-status
+Title: "Emergency Department Mobility Status Value Set"
+Description: "Permitted mobility statuses recorded at ED registration."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMMobilityStatusCS
+
+ValueSet: EMPresentationTypeVS
+Id: em-presentation-type
+Title: "Emergency Department Presentation Type Value Set"
+Description: "Permitted presentation types (acute/chronic)."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMPresentationTypeCS
+
+ValueSet: EMMechanismOfInjuryVS
+Id: em-mechanism-of-injury
+Title: "Emergency Department Mechanism of Injury Value Set"
+Description: "Permitted mechanisms of injury for a trauma presentation."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMMechanismOfInjuryCS
+
+ValueSet: EMInjuryIntentVS
+Id: em-injury-intent
+Title: "Emergency Department Injury Intent Value Set"
+Description: "Permitted injury intents for a trauma presentation."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMInjuryIntentCS
+
+ValueSet: EMSubstanceUseTypeVS
+Id: em-substance-use-type
+Title: "Emergency Department Substance Use Type Value Set"
+Description: "Permitted substance-use types."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMSubstanceUseTypeCS
+
+ValueSet: EMDispositionVS
+Id: em-disposition
+Title: "Emergency Department Disposition Value Set"
+Description: "Permitted ED encounter dispositions."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMDispositionCS
+
+ValueSet: EMABCDEComponentVS
+Id: em-abcde-component
+Title: "Emergency ABCDE Assessment Component Value Set"
+Description: "Permitted ABCDE assessment letters."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMABCDEComponentCS
+
+ValueSet: EMHighRiskSignVS
+Id: em-high-risk-sign
+Title: "Emergency High-Risk Sign Value Set"
+Description: "Permitted WHO Emergency Unit high-risk sign codes."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMHighRiskSignCS
+
+ValueSet: EMReviewOfSystemsBodySystemVS
+Id: em-review-of-systems-body-system
+Title: "Emergency Review of Systems Body System Value Set"
+Description: "Permitted Review of Systems body systems."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMReviewOfSystemsBodySystemCS
+
+ValueSet: EMExamSystemVS
+Id: em-exam-system
+Title: "Emergency Physical Exam System Value Set"
+Description: "Permitted ED Physical Exam body systems/regions."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMExamSystemCS
+
+ValueSet: EMPOCUSViewVS
+Id: em-pocus-view
+Title: "Emergency POCUS View Value Set"
+Description: "Permitted point-of-care ultrasound views."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMPOCUSViewCS
+
+ValueSet: EMPOCUSFindingVS
+Id: em-pocus-finding
+Title: "Emergency POCUS Finding Value Set"
+Description: "Permitted structured POCUS findings."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMPOCUSFindingCS
+
+ValueSet: EMCardiacActivityVS
+Id: em-cardiac-activity
+Title: "Emergency POCUS Cardiac Activity Value Set"
+Description: "Permitted cardiac-activity findings on a cardiac POCUS view."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMCardiacActivityCS
+
+ValueSet: EMRVFunctionVS
+Id: em-rv-function
+Title: "Emergency POCUS Right Ventricular Function Value Set"
+Description: "Permitted RV-function findings on a cardiac POCUS view."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMRVFunctionCS
+
+ValueSet: EMUrinalysisResultVS
+Id: em-urinalysis-result
+Title: "Emergency Urinalysis Dipstick Result Value Set"
+Description: "Permitted semi-quantitative dipstick results."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMUrinalysisResultCS
+
+ValueSet: EMEDSectionVS
+Id: em-ed-section
+Title: "Emergency Department Patient Record Section Value Set"
+Description: "Fixed section list for EMEDPatientRecordComposition."
+* ^status = #active
+* ^experimental = false
+* include codes from system EMEDSectionCS

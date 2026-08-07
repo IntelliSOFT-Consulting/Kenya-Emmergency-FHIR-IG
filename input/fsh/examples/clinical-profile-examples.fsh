@@ -135,69 +135,69 @@ Description: "Example must-see alert referencing the high-criticality Domiphen a
 // EMCondition — diagnosis staging
 // ============================================================================
 
-// Instance: em-condition-chief-complaint-example
-// InstanceOf: EMCondition
-// Usage: #example
-// Title: "Condition - Chief Complaint"
-// Description: "Example chief-complaint Condition captured from caller-reported information at T0."
+Instance: em-condition-chief-complaint-example
+InstanceOf: EMCondition
+Usage: #example
+Title: "Condition - Chief Complaint"
+Description: "Example chief-complaint Condition captured from caller-reported information at T0."
 
-// * subject = Reference(Patient/pat-0712345678)
-// * encounter = Reference(Encounter/em-incident-encounter-example)
-// * category = EMDiagnosisCategoryCS#chief-complaint "Chief complaint"
-// * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#unconfirmed "Unconfirmed"
-// * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
-// * code = ManifestationCS#CHEST-PAIN "Chest pain"
-// * recordedDate = "2026-06-29T12:00:00+03:00"
-// * asserter = Reference(Patient/pat-0712345678)
-
-
-// Instance: em-condition-working-diagnosis-example
-// InstanceOf: EMCondition
-// Usage: #example
-// Title: "Condition - Working Diagnosis"
-// Description: "Example working-diagnosis Condition recorded after on-scene assessment."
-
-// * subject = Reference(Patient/pat-0712345678)
-// * encounter = Reference(Encounter/em-poc-encounter-example)
-// * category = EMDiagnosisCategoryCS#working-diagnosis "Working diagnosis"
-// * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional "Provisional"
-// * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
-// * code.text = "Suspected anterior STEMI"
-// * severity = http://snomed.info/sct#24484000 "Severe"
-// * recordedDate = "2026-06-29T12:20:00+03:00"
-// * recorder = Reference(Practitioner/em-practitioner-example)
+* subject = Reference(Patient/pat-0712345678)
+* encounter = Reference(Encounter/em-incident-encounter-example)
+* category = EMDiagnosisCategoryCS#chief-complaint "Chief complaint"
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#unconfirmed "Unconfirmed"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
+* code = ManifestationCS#CHEST-PAIN "Chest pain"
+* recordedDate = "2026-06-29T12:00:00+03:00"
+* asserter = Reference(Patient/pat-0712345678)
 
 
-// Instance: em-condition-discharge-diagnosis-example
-// InstanceOf: EMCondition
-// Usage: #example
-// Title: "Condition - Discharge Diagnosis"
-// Description: "Example confirmed discharge-diagnosis Condition recorded at facility handover."
+Instance: em-condition-working-diagnosis-example
+InstanceOf: EMCondition
+Usage: #example
+Title: "Condition - Working Diagnosis"
+Description: "Example working-diagnosis Condition recorded after on-scene assessment."
 
-// * subject = Reference(Patient/pat-0712345678)
-// * encounter = Reference(Encounter/em-poc-encounter-example)
-// * category = EMDiagnosisCategoryCS#discharge-diagnosis "Discharge diagnosis"
-// * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
-// * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
-// * code.text = "Anterior ST-elevation myocardial infarction"
-// * severity = http://snomed.info/sct#24484000 "Severe"
-// * recordedDate = "2026-06-29T12:38:00+03:00"
-// * recorder = Reference(Practitioner/em-practitioner-example)
+* subject = Reference(Patient/pat-0712345678)
+* encounter = Reference(Encounter/em-poc-encounter-example)
+* category = EMDiagnosisCategoryCS#working-diagnosis "Working diagnosis"
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional "Provisional"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
+* code.text = "Suspected anterior STEMI"
+* severity = http://snomed.info/sct#24484000 "Severe"
+* recordedDate = "2026-06-29T12:20:00+03:00"
+* recorder = Reference(Practitioner/em-practitioner-example)
 
 
-// Instance: em-condition-discharge-diagnosis-example-invalid
-// InstanceOf: EMCondition
-// Usage: #example
-// Title: "Condition - Invalid Example"
-// Description: "Invalid discharge-diagnosis example demonstrating verificationStatus left as 'provisional' instead of 'confirmed', violating invariant em-condition-1."
+Instance: em-condition-discharge-diagnosis-example
+InstanceOf: EMCondition
+Usage: #example
+Title: "Condition - Discharge Diagnosis"
+Description: "Example confirmed discharge-diagnosis Condition recorded at facility handover."
 
-// * subject = Reference(Patient/pat-0712345678)
-// * encounter = Reference(Encounter/em-poc-encounter-example)
-// * category = EMDiagnosisCategoryCS#discharge-diagnosis "Discharge diagnosis"
-// * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional "Provisional"
-// * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
-// * code.text = "Anterior ST-elevation myocardial infarction"
-// * recordedDate = "2026-06-29T12:38:00+03:00"
+* subject = Reference(Patient/pat-0712345678)
+* encounter = Reference(Encounter/em-poc-encounter-example)
+* category = EMDiagnosisCategoryCS#discharge-diagnosis "Discharge diagnosis"
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
+* code.text = "Anterior ST-elevation myocardial infarction"
+* severity = http://snomed.info/sct#24484000 "Severe"
+* recordedDate = "2026-06-29T12:38:00+03:00"
+* recorder = Reference(Practitioner/em-practitioner-example)
+
+
+Instance: em-condition-discharge-diagnosis-example-invalid
+InstanceOf: EMCondition
+Usage: #example
+Title: "Condition - Invalid Example"
+Description: "Invalid discharge-diagnosis example demonstrating verificationStatus left as 'provisional' instead of 'confirmed', violating invariant em-condition-1."
+
+* subject = Reference(Patient/pat-0712345678)
+* encounter = Reference(Encounter/em-poc-encounter-example)
+* category = EMDiagnosisCategoryCS#discharge-diagnosis "Discharge diagnosis"
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional "Provisional"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
+* code.text = "Anterior ST-elevation myocardial infarction"
+* recordedDate = "2026-06-29T12:38:00+03:00"
 
 
 // ============================================================================
